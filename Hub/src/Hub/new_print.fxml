@@ -9,9 +9,9 @@
 
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
-          fx:controller="sample.new_print_controller"
+          fx:controller="Hub.new_print_controller"
           fx:id="new_print"
-          stylesheets="@new_rental_form.css">
+          stylesheets="@new_print.css">
 
     <columnConstraints>
         <ColumnConstraints percentWidth="25" />
@@ -27,7 +27,7 @@
         <RowConstraints percentHeight="25" />
     </rowConstraints>
 
-    <Label text="New Rental"
+    <Label text="New Print Order"
            fx:id="title_lbl"
            GridPane.halignment="CENTER"
            GridPane.hgrow="ALWAYS"
@@ -50,7 +50,6 @@
             <RowConstraints percentHeight="50" />
             <RowConstraints percentHeight="50" />
         </rowConstraints>
-
     </GridPane>
 
     <Button text="Return"
@@ -66,5 +65,7 @@
             GridPane.halignment="CENTER"
             GridPane.columnIndex="3"
             GridPane.rowIndex="0" />
+
+
 
 </GridPane>

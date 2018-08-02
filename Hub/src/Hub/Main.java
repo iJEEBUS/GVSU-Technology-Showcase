@@ -1,15 +1,11 @@
-package sample;
+package Hub;
 
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.ColumnConstraints;
-import javafx.scene.layout.RowConstraints;
 import javafx.stage.Stage;
-import javafx.scene.layout.GridPane;
 
 public class Main extends Application {
 
@@ -31,7 +27,6 @@ public class Main extends Application {
         main_stage.setFullScreen(true);
         main_stage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);

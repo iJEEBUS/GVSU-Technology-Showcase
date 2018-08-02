@@ -4,14 +4,14 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
-          fx:controller="sample.time_clock_controller"
-          fx:id="time_clock"
-          stylesheets="@time_clock.css">
-
+          fx:controller="Hub.new_print_controller"
+          fx:id="new_print"
+          stylesheets="@new_print.css">
 
     <columnConstraints>
         <ColumnConstraints percentWidth="25" />
@@ -27,13 +27,30 @@
         <RowConstraints percentHeight="25" />
     </rowConstraints>
 
-    <Label text="Time Clock"
+    <Label text="New Print Order"
            fx:id="title_lbl"
            GridPane.halignment="CENTER"
            GridPane.hgrow="ALWAYS"
            GridPane.columnIndex="0"
            GridPane.columnSpan="4"
            GridPane.rowIndex="0" />
+
+    <GridPane
+            GridPane.columnIndex="0"
+            GridPane.columnSpan="2"
+            GridPane.rowIndex="1"
+            GridPane.rowSpan="2" >
+
+        <columnConstraints>
+            <ColumnConstraints percentWidth="50" />
+            <ColumnConstraints percentWidth="50" />
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints percentHeight="50" />
+            <RowConstraints percentHeight="50" />
+        </rowConstraints>
+    </GridPane>
 
     <Button text="Return"
             fx:id="back_btn"
@@ -44,9 +61,11 @@
 
     <Button text="Submit"
             fx:id="submit_btn"
-            onAction="#submitTime"
+            onAction="#submitOrder"
             GridPane.halignment="CENTER"
             GridPane.columnIndex="3"
             GridPane.rowIndex="0" />
+
+
 
 </GridPane>

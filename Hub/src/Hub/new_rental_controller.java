@@ -1,4 +1,4 @@
-package sample;
+package Hub;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -7,17 +7,18 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class time_clock_controller {
+public class new_rental_controller {
 
     @FXML
-    public GridPane time_clock;
+    public GridPane new_rental;
 
     /**
      * Changes the root scene back to the main hub
      */
     public void returnToHub() {
         try {
-            Stage stage = (Stage) time_clock.getScene().getWindow();
+
+            Stage stage = (Stage) new_rental.getScene().getWindow();
             System.out.println();
             stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("main_hub.fxml")));
             stage.setFullScreen(true);
@@ -26,7 +27,9 @@ public class time_clock_controller {
         }
     }
 
-    public void submitTime() {
-        
+    public void submitOrder() {
+
+        // TODO
+
     }
 }

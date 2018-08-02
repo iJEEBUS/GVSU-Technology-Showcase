@@ -8,7 +8,7 @@
 
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
-          fx:controller="sample.Controller"
+          fx:controller="Hub.Controller"
           fx:id="main_hub"
           stylesheets="@Shallots.css">
 

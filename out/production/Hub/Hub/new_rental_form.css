@@ -1,0 +1,45 @@
+.root {
+    -fx-background-color: #1c1c1c;
+}
+
+#title_lbl {
+    -fx-font-size: 110pt;
+    -fx-text-fill: radial-gradient(radius 85%, #1974bb, ghostwhite, #3cc0f0, #1974bb, ghostwhite, #3cc0f0);
+}
+
+.text-field {
+    -fx-background-color: #1c1c1c;
+    -fx-font-size: 40pt;
+    -fx-text-fill: ghostwhite;
+    -fx-padding: 5px;
+    -fx-alignment: center;
+}
+
+#back_btn {
+    -fx-text-fill: grey;
+    -fx-fill-width: true;
+    -fx-fill-height: true;
+    -fx-background-color: #1c1c1c;
+    -fx-font-size: 35pt;
+}
+
+#back_btn:hover {
+    -fx-text-fill: ghostwhite;
+    -fx-fill-height: true;
+    -fx-font-size: 40pt;
+}
+
+#submit_btn {
+    -fx-text-fill: grey;
+    -fx-fill-width: true;
+    -fx-fill-height: true;
+    -fx-background-color: #1c1c1c;
+    -fx-font-size: 35pt;
+}
+
+#submit_btn:hover {
+    -fx-text-fill: #B3EFB2;
+    -fx-fill-height: true;
+    -fx-font-size: 40pt;
+}
+
