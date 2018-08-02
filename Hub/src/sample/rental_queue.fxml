@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.control.Label?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/8.0.121"
+          fx:controller="sample.rental_queue_controller"
+          fx:id="rental_queue"
+          stylesheets="@rental_queue.css">
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="33.33" />
+        <ColumnConstraints percentWidth="33.33" />
+        <ColumnConstraints percentWidth="33.33" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="25" />
+        <RowConstraints percentHeight="25" />
+        <RowConstraints percentHeight="25" />
+        <RowConstraints percentHeight="25" />
+    </rowConstraints>
+
+    <Label text="Rental Queue"
+           fx:id="title_lbl"
+           GridPane.halignment="CENTER"
+           GridPane.hgrow="ALWAYS"
+           GridPane.columnIndex="0"
+           GridPane.columnSpan="3"
+           GridPane.rowIndex="0" />
+
+    <Button text="Return"
+            fx:id="back_btn"
+            onAction="#returnToHub"
+            GridPane.halignment="CENTER"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="0" />
+
+</GridPane>
