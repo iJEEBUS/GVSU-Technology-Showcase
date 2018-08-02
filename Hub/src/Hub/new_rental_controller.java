@@ -2,6 +2,7 @@ package Hub;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.ComboBox;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -11,6 +12,9 @@ public class new_rental_controller {
 
     @FXML
     public GridPane new_rental;
+
+    @FXML
+    ComboBox tech_items;
 
     /**
      * Changes the root scene back to the main hub

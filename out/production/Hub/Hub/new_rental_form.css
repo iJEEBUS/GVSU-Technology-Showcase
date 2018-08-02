@@ -4,7 +4,7 @@
 
 #title_lbl {
     -fx-font-size: 110pt;
-    -fx-text-fill: radial-gradient(radius 85%, #1974bb, ghostwhite, #3cc0f0, #1974bb, ghostwhite, #3cc0f0);
+    -fx-text-fill: linear-gradient(to top, #1974bb, ghostwhite, #3cc0f0, #1974bb, ghostwhite, #3cc0f0, ghostwhite, #1974bb, ghostwhite, #3cc0f0);
 }
 
 .text-field {
@@ -13,6 +13,11 @@
     -fx-text-fill: ghostwhite;
     -fx-padding: 5px;
     -fx-alignment: center;
+
+    -fx-border-width: 0 0 2 0;
+    -fx-border-bottom: 2px;
+    -fx-border-color: #1974bb;
+    -fx-border-insets: 20,20,20,20;
 }
 
 #back_btn {
@@ -41,5 +46,26 @@
     -fx-text-fill: #B3EFB2;
     -fx-fill-height: true;
     -fx-font-size: 40pt;
+}
+
+#tech_items {
+    -fx-background-color: grey;
+    -fx-fill-height: true;
+    -fx-fill-width: true;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: ghostwhite;
+    -fx-background-color: grey, grey;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , #1c1c1c , 8, 0.0 , 0 , 0 );
+}
+
+.combo-box-base {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ComboBoxBaseSkin";
+    -fx-background-color: grey, grey, grey, grey;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-padding: 0;
 }
 

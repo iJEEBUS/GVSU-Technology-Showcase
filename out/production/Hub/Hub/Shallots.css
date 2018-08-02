@@ -4,7 +4,7 @@
 
 #title_lbl {
     -fx-font-size: 110pt;
-    -fx-text-fill: radial-gradient(radius 85%, #1974bb, ghostwhite, #3cc0f0, #1974bb, ghostwhite, #3cc0f0);
+    -fx-text-fill: radial-gradient(radius 85%, #1974bb, ghostwhite, #3cc0f0, #1974bb, ghostwhite, #3cc0f0, ghostwhite, #3cc0f0);
 }
 
 .button {

@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a05ed9ce-81b4-4ba8-81fe-aec5d00f00fd" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/Controller.class" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/Controller.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/Main.class" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/Main.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/Shallots.css" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/Shallots.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/main_hub.fxml" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/main_hub.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/new_print.css" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/new_print.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/new_print.fxml" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/new_print.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/new_print_controller.class" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/new_print_controller.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/new_rental.fxml" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/new_rental.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/new_rental_controller.class" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/new_rental_controller.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/new_rental_form.css" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/new_rental_form.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/print_queue.css" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/print_queue.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/print_queue.fxml" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/print_queue.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/print_queue_controller.class" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/print_queue_controller.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/rental_queue.css" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/rental_queue.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/rental_queue.fxml" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/rental_queue.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/rental_queue_controller.class" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/rental_queue_controller.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/time_clock.css" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/time_clock.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/time_clock.fxml" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/time_clock.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/sample/time_clock_controller.class" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/time_clock_controller.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Shallots.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/Shallots.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Main.java">
+      <file leaf-file-name="new_rental.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+            <state relative-caret-position="585">
+              <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_rental_form.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -57,6 +55,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Hub/src/Hub/Main.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/Shallots.css" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" />
       </list>
     </option>
   </component>
@@ -65,6 +67,11 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1024" />
+    <option name="height" value="1258" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -93,19 +100,12 @@
             <path>
               <item name="GVSU-Technology-Showcase" type="b2602c69:ProjectViewProjectNode" />
               <item name="Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GVSU-Technology-Showcase" type="b2602c69:ProjectViewProjectNode" />
               <item name="Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GVSU-Technology-Showcase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Hub" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -262,15 +262,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533233198807</updated>
-      <workItem from="1533233200112" duration="291000" />
+      <workItem from="1533233200112" duration="9581000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291000" />
+    <option name="totallyTimeSpent" value="9581000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="280" y="48" width="1507" height="1232" extended-state="0" />
+    <frame x="0" y="22" width="1024" height="1258" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -282,11 +282,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32931036" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32209107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24950232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17773438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -315,10 +315,56 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        <state relative-caret-position="345">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/main_hub.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Shallots.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>

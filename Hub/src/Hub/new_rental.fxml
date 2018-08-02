@@ -7,6 +7,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 
+<?import javafx.scene.control.ComboBox?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
           fx:controller="Hub.new_print_controller"
@@ -30,12 +33,12 @@
     <Label text="New Rental"
            fx:id="title_lbl"
            GridPane.halignment="CENTER"
-           GridPane.hgrow="ALWAYS"
            GridPane.columnIndex="0"
            GridPane.columnSpan="4"
            GridPane.rowIndex="0" />
 
     <GridPane
+            fx:id="rental_pane_left"
             GridPane.columnIndex="0"
             GridPane.columnSpan="2"
             GridPane.rowIndex="1"
@@ -51,6 +54,76 @@
             <RowConstraints percentHeight="50" />
         </rowConstraints>
 
+        <TextField promptText="First name"
+                   GridPane.rowIndex="0"
+                   GridPane.columnIndex="0"
+                    GridPane.fillWidth="false" />
+
+        <TextField promptText="Last name"
+                   GridPane.rowIndex="0"
+                   GridPane.columnIndex="1"
+                   GridPane.fillWidth="false" />
+
+        <TextField promptText="Email"
+                   GridPane.halignment="CENTER"
+                   GridPane.rowIndex="1"
+                   GridPane.columnIndex="0"
+                   GridPane.columnSpan="2"
+                   GridPane.fillWidth="false" />
+    </GridPane>
+
+    <GridPane
+            fx:id="rental_pane_right"
+            GridPane.columnIndex="2"
+            GridPane.columnSpan="2"
+            GridPane.rowIndex="1"
+            GridPane.rowSpan="2" >
+
+        <columnConstraints>
+            <ColumnConstraints percentWidth="50" />
+            <ColumnConstraints percentWidth="50" />
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints percentHeight="50" />
+            <RowConstraints percentHeight="50" />
+        </rowConstraints>
+
+        <ComboBox fx:id="tech_items"
+                  GridPane.rowIndex="0"
+                  GridPane.columnIndex="0"
+                  GridPane.fillWidth="True"
+                  GridPane.halignment="CENTER"
+        >
+            <items>
+                <FXCollections
+                        fx:id="tech_items_dropdown"
+                        fx:factory="observableArrayList">
+                    <String fx:value="Aircharge" />
+                    <String fx:value="Amazon Echo" />
+                    <String fx:value="Amazon Show" />
+                    <String fx:value="Cubelets" />
+                    <String fx:value="Cyrano" />
+                    <String fx:value="Double Robot" />
+                    <String fx:value="Epic Mobile Projection Keyboard" />
+                    <String fx:value="HP Sprocket" />
+                    <String fx:value="HP Sprout" />
+                    <String fx:value="HTC Vive" />
+                    <String fx:value="L3D Cube" />
+                    <String fx:value="Leap Motion" />
+                    <String fx:value="LittleBits" />
+                    <String fx:value="Makeblock mBot Ranger" />
+                    <String fx:value="Merge Cube" />
+                    <String fx:value="Microsoft HoloLens" />
+                    <String fx:value="Oculus Go" />
+                    <String fx:value="Osmo" />
+                    <String fx:value="PhoneSoap" />
+                    <String fx:value="Ricoh Theta" />
+                    <String fx:value="Snap Specs" />
+                    <String fx:value="Sphero 2.0" />
+                </FXCollections>
+            </items>
+        </ComboBox>
     </GridPane>
 
     <Button text="Return"
