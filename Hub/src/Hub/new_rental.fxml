@@ -6,10 +6,13 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-
 <?import javafx.scene.control.ComboBox?>
 <?import java.lang.String?>
 <?import javafx.collections.FXCollections?>
+
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
           fx:controller="Hub.new_print_controller"
@@ -126,14 +129,12 @@
         </ComboBox>
     </GridPane>
 
-
-
-    <Button text="Return"
-            fx:id="back_btn"
+    <Button fx:id="back_btn"
             onAction="#returnToHub"
             GridPane.halignment="CENTER"
             GridPane.columnIndex="0"
-            GridPane.rowIndex="0" />
+            GridPane.rowIndex="0">
+    </Button>
 
     <Button text="Submit"
             fx:id="submit_btn"

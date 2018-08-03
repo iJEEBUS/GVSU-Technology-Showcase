@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -16,6 +17,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 
         main_stage = primaryStage;
+
 
         // Main hub scene
         FXMLLoader main_hub_loader = new FXMLLoader(getClass().getResource("main_hub.fxml"));

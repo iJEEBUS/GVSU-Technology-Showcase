@@ -30,11 +30,18 @@
 }
 
 #back_btn {
-    -fx-text-fill: grey;
+    /*-fx-text-fill: grey;*/
+    -fx-background-image: url("/Users/user/Desktop/Programming/GitHub/GVSU-Technology-Showcase/Hub/src/Hub/Icons/regulararrow-alt-circle-left.svg");
     -fx-fill-width: true;
     -fx-fill-height: true;
-    -fx-background-color: #1c1c1c;
-    -fx-font-size: 35pt;
+    -fx-background-color: transparent;
+    -fx-font-size: 15pt;
+}
+
+#back_btn SVGPath:hover {
+    -fx-scale-x: 10%;
+    -fx-scale-y: 30%;
+    -fx-fill: ghostwhite;
 }
 
 #back_btn:hover {
@@ -60,7 +67,6 @@
 #tech_items {
     -fx-background-color: #1c1c1c;
     -fx-fill-height: true;
-    /*-fx-fill-width: true;*/
     -fx-border-width: 2px;
     -fx-border-color: #1974bb;
     -fx-border-radius: 25px;
@@ -72,7 +78,6 @@
     -fx-font-family: "Avenir";
     -fx-background-color: #1c1c1c;
     -fx-font-size: 20pt;
-    /*-fx-effect: dropshadow( three-pass-box , #1c1c1c , 8, 0.0 , 0 , 0 );*/
 }
 
 .combo-box .list-cell:hover {
@@ -82,8 +87,7 @@
 }
 
 .combo-box-base {
-    -fx-skin: "com.sun.javafx.scene.control.skin.ComboBoxBaseSkin";
-    -fx-background-color: grey, grey, grey, grey;
+    s-fx-background-color: grey, grey, grey, grey;
     -fx-background-radius: 5, 5, 4, 3;
     -fx-background-insets: 0 0 -1 0, 0, 1, 2;
     -fx-padding: 0;
