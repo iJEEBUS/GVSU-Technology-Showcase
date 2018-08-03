@@ -1,15 +1,47 @@
+/* Main background */
 .root {
-    -fx-background-color: #1c1c1c;
+    -fx-background-color: linear-gradient(to top right, #1c1c1c, #414141, #1c1c1c);
 }
 
+/* Header */
 #title_lbl {
+    -fx-font-family: "Avenir", serif;
     -fx-font-size: 110pt;
-    /*-fx-text-fill: radial-gradient(radius 85%, #1974bb, ghostwhite, #3cc0f0, #1974bb, ghostwhite, #3cc0f0, ghostwhite, #3cc0f0);*/
-    -fx-text-fill: radial-gradient(center 50% 50% , radius 50% , #1974bb, ghostwhite);
+    -fx-text-fill: #1974bb;
 }
 
-.text-field {
-    -fx-background-color: #1c1c1c;
+#back_btn {
+    -fx-text-fill: #c7c7c7;
+    -fx-fill-width: true;
+    -fx-fill-height: true;
+    -fx-background-color: transparent;
+    -fx-font-size: 35pt;
+}
+
+#back_btn:hover {
+    -fx-text-fill: ghostwhite;
+    -fx-fill-height: true;
+    -fx-font-size: 40pt;
+}
+
+#submit_btn {
+    -fx-text-fill: #c7c7c7;
+    -fx-fill-width: true;
+    -fx-fill-height: true;
+    -fx-background-color: transparent;
+    -fx-font-size: 35pt;
+}
+
+#submit_btn:hover {
+    -fx-text-fill: #B3EFB2;
+    -fx-fill-height: true;
+    -fx-font-size: 40pt;
+}
+
+/* Left Pane */
+/* User Information */
+#user_input {
+    -fx-background-color: transparent;
     -fx-font-size: 35pt;
     -fx-text-fill: ghostwhite;
     -fx-padding: 5px;
@@ -21,68 +53,108 @@
     -fx-border-insets: 20,20,20,20;
 }
 
-.text-field:focused {
+#user_input:focused {
+
     -fx-font-size: 40pt;
 }
 
-.text-field:hover {
+#user_input:hover {
     -fx-font-size: 40pt;
 }
 
-#back_btn {
-    -fx-background-image: url("INSERT PICTURE LOCATION HERE");
+
+/* Right Pane */
+/* Tech Items */
+#tech_items_lbl {
+    -fx-text-fill: ghostwhite;
     -fx-fill-width: true;
     -fx-fill-height: true;
     -fx-background-color: transparent;
-    -fx-font-size: 15pt;
-}
-
-#back_btn:hover {
-    -fx-text-fill: ghostwhite;
-    -fx-fill-height: true;
-    -fx-font-size: 40pt;
-}
-
-#submit_btn {
-    -fx-text-fill: grey;
-    -fx-fill-width: true;
-    -fx-fill-height: true;
-    -fx-background-color: #1c1c1c;
-    -fx-font-size: 35pt;
-}
-
-#submit_btn:hover {
-    -fx-text-fill: #B3EFB2;
-    -fx-fill-height: true;
-    -fx-font-size: 40pt;
+    -fx-font-size: 25pt;
 }
 
 #tech_items {
-    -fx-background-color: #1c1c1c;
+    -fx-background-color: transparent;
+    -fx-text-fill: #1c1c1c;
     -fx-fill-height: true;
     -fx-border-width: 2px;
     -fx-border-color: #1974bb;
     -fx-border-radius: 25px;
-    -fx-border-insets: 20,20,20,20;
 }
 
 .combo-box .list-cell {
-    -fx-text-fill: ghostwhite;
+    -fx-text-fill: #3cc0f0;
     -fx-font-family: "Avenir";
-    -fx-background-color: #1c1c1c;
+    -fx-background-color: transparent;
     -fx-font-size: 20pt;
 }
 
 .combo-box .list-cell:hover {
-    -fx-background-color: #1974bb;
+    -fx-background-color: #1c1c1c;
     -fx-font-size: 25pt;
-
 }
 
-.combo-box-base {
-    s-fx-background-color: grey, grey, grey, grey;
-    -fx-background-radius: 5, 5, 4, 3;
-    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
-    -fx-padding: 0;
+/* Additional Components */
+#additional_components_lbl {
+    -fx-text-fill: #c7c7c7;
+    -fx-fill-width: true;
+    -fx-fill-height: true;
+    -fx-background-color: transparent;
+    -fx-font-size: 25pt;
+    -fx-padding: 10,10,10,10;
 }
 
+#additional_components {
+    -fx-control-inner-background: #c7c7c7;
+    -fx-highlight-fill: #3cc0f0;
+    -fx-highlight-text-fill: #1c1c1c;
+    -fx-text-fill: #1c1c1c;
+    -fx-font-size: 25pt;
+    -fx-padding: 10,10,10,10;
+}
+
+/* Calendar */
+#return_date_lbl {
+    -fx-text-fill: #c7c7c7;
+    -fx-fill-width: true;
+    -fx-fill-height: true;
+    -fx-background-color: transparent;
+    -fx-font-size: 25pt;
+}
+
+#return_date_picker {
+    -fx-text-fill: #c7c7c7;
+    -fx-background-color: transparent;
+    -fx-font-size: 25pt;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-bottom: 2px;
+    -fx-border-color: #1974bb;
+    -fx-padding: 0px, 10px, 0px, 0px;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-font-size: 35pt;
+    -fx-text-fill: ghostwhite;
+    -fx-padding: 5px;
+    -fx-alignment: center;
+}
+
+/* Comments */
+#comments_lbl {
+    -fx-text-fill: #c7c7c7;
+    -fx-fill-width: true;
+    -fx-fill-height: true;
+    -fx-background-color: transparent;
+    -fx-font-size: 25pt;
+    -fx-padding: 10,10,10,10;
+}
+
+#comments {
+    -fx-control-inner-background: #c7c7c7;
+    -fx-highlight-fill: #3cc0f0;
+    -fx-highlight-text-fill: #1c1c1c;
+    -fx-text-fill: #1c1c1c;
+    -fx-font-size: 25pt;
+    -fx-padding: 10,10,10,10;
+}

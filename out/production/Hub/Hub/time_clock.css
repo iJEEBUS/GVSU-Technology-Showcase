@@ -1,10 +1,11 @@
 .root {
-    -fx-background-color: #1c1c1c;
+    -fx-background-color: linear-gradient(to top right, #1c1c1c, #414141, #1c1c1c);
 }
 
 #title_lbl {
+    -fx-font-family: "Avenir", serif;
     -fx-font-size: 110pt;
-    -fx-text-fill: radial-gradient(radius 85%, #1974bb, ghostwhite, #3cc0f0, #1974bb, ghostwhite, #3cc0f0);
+    -fx-text-fill: #1974bb;
 }
 
 #back_btn {
@@ -19,7 +20,9 @@
     -fx-text-fill: grey;
     -fx-fill-width: true;
     -fx-fill-height: true;
-    -fx-background-color: #1c1c1c;
+    -fx-alignment: bottom-left;
+    -fx-background-color: transparent;
+
     -fx-font-size: 35pt;
 }
 

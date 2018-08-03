@@ -26,13 +26,17 @@
         <RowConstraints percentHeight="25" />
     </rowConstraints>
 
+    <!-- Title -->
     <Label text="Technology Showcase"
            fx:id="title_lbl"
            GridPane.halignment="CENTER"
+           GridPane.valignment="TOP"
            GridPane.hgrow="ALWAYS"
            GridPane.columnIndex="0"
            GridPane.columnSpan="3"
            GridPane.rowIndex="0" />
+
+    <!-- Left Panel -->
     <Button text="Print Queue"
             fx:id="print_queue_btn"
             onAction="#showPrintQueue"
@@ -46,6 +50,17 @@
             GridPane.halignment="CENTER"
             GridPane.columnIndex="0"
             GridPane.rowIndex="2" />
+
+    <!-- Center Panel -->
+    <Button fx:id="center_logo_label"
+           GridPane.fillWidth="true"
+           GridPane.fillHeight="true"
+           GridPane.halignment="CENTER"
+           GridPane.columnIndex="1"
+           GridPane.rowIndex="1"
+            GridPane.rowSpan="2" />
+
+    <!-- Right Panel -->
     <Button text="Rental Queue"
             fx:id="rental_queue_btn"
             onAction="#showRentalQueue"
@@ -58,6 +73,8 @@
             GridPane.halignment="CENTER"
             GridPane.columnIndex="2"
             GridPane.rowIndex="2" />
+
+    <!-- Time Clock -->
     <Button text="Time Clock"
             fx:id="time_clock_btn"
             onAction="#showTimeClock"

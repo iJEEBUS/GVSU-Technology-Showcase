@@ -29,6 +29,7 @@
     <Label text="Print Queue"
            fx:id="title_lbl"
            GridPane.halignment="CENTER"
+           GridPane.valignment="TOP"
            GridPane.hgrow="ALWAYS"
            GridPane.columnIndex="0"
            GridPane.columnSpan="3"
@@ -37,7 +38,8 @@
     <Button text="Return"
             fx:id="back_btn"
             onAction="#returnToHub"
-            GridPane.halignment="CENTER"
+            GridPane.halignment="LEFT"
+            GridPane.valignment="TOP"
             GridPane.columnIndex="0"
             GridPane.rowIndex="0" />
 
