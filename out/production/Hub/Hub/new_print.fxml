@@ -6,32 +6,32 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ComboBox?>
-<?import java.lang.String?>
-<?import javafx.collections.FXCollections?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.DatePicker?>
 
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
           fx:controller="Hub.new_print_controller"
-          fx:id="new_print"
+          fx:id="new_print_pane"
           stylesheets="@new_print.css">
 
     <!-- Entire Pane Layout -->
     <columnConstraints>
-        <ColumnConstraints percentWidth="25" />
-        <ColumnConstraints percentWidth="25" />
-        <ColumnConstraints percentWidth="25" />
-        <ColumnConstraints percentWidth="25" />
+        <ColumnConstraints percentWidth="2.5" />
+        <ColumnConstraints percentWidth="23.5" />
+        <ColumnConstraints percentWidth="23.5" />
+        <ColumnConstraints percentWidth="2.5" />
+        <ColumnConstraints percentWidth="23.5" />
+        <ColumnConstraints percentWidth="23.5" />
+        <ColumnConstraints percentWidth="2.5" />
     </columnConstraints>
 
     <rowConstraints>
-        <RowConstraints percentHeight="25" />
-        <RowConstraints percentHeight="25" />
-        <RowConstraints percentHeight="25" />
-        <RowConstraints percentHeight="25" />
+        <RowConstraints percentHeight="24" />
+        <RowConstraints percentHeight="24" />
+        <RowConstraints percentHeight="24" />
+        <RowConstraints percentHeight="24" />
+        <RowConstraints percentHeight="2.5" />
     </rowConstraints>
 
     <!-- Header Components -->
@@ -40,7 +40,7 @@
            GridPane.halignment="CENTER"
            GridPane.valignment="TOP"
            GridPane.columnIndex="0"
-           GridPane.columnSpan="4"
+           GridPane.columnSpan="7"
            GridPane.rowIndex="0" />
 
     <Button text="Return"
@@ -48,7 +48,7 @@
             onAction="#returnToHub"
             GridPane.halignment="LEFT"
             GridPane.valignment="TOP"
-            GridPane.columnIndex="0"
+            GridPane.columnIndex="1"
             GridPane.rowIndex="0">
     </Button>
 
@@ -57,82 +57,109 @@
             onAction="#submitOrder"
             GridPane.halignment="RIGHT"
             GridPane.valignment="TOP"
-            GridPane.columnIndex="3"
+            GridPane.columnIndex="5"
             GridPane.rowIndex="0" />
 
-    <!-- User Information -->
-    <TextField promptText="First name"
+    <!-- User Information Pane -->
+    <GridPane fx:id="user_info_pane"
+              GridPane.rowIndex="1"
+              GridPane.columnIndex="1"
+              GridPane.columnSpan="2"
+              GridPane.rowSpan="2"
+              GridPane.fillWidth="false"
+              GridPane.fillHeight="True">
+
+        <!-- Define a 2x2 grid for buttons -->
+        <columnConstraints>
+            <ColumnConstraints percentWidth="50" />
+            <ColumnConstraints percentWidth="50" />
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints percentHeight="50" />
+            <RowConstraints percentHeight="50" />
+        </rowConstraints>
+
+        <!-- Components -->
+        <TextField promptText="First name"
                fx:id="user_input"
-               GridPane.rowIndex="1"
+               GridPane.rowIndex="0"
                GridPane.columnIndex="0"
                GridPane.fillWidth="false" />
 
-    <TextField promptText="Last name"
+        <TextField promptText="Last name"
                fx:id="user_input"
-               GridPane.rowIndex="1"
+               GridPane.rowIndex="0"
                GridPane.columnIndex="1"
                GridPane.fillWidth="false" />
 
-    <TextField promptText="Email"
+        <TextField promptText="Email"
                fx:id="user_input"
                GridPane.halignment="CENTER"
-               GridPane.rowIndex="2"
+               GridPane.rowIndex="1"
                GridPane.columnIndex="0"
                GridPane.columnSpan="2"
                GridPane.fillWidth="true" />
+    </GridPane>
 
-    <!-- Files to Upload -->
-    <Button text="Upload 1"
-            fx:id="upload_btn"
-            GridPane.rowIndex="1"
-            GridPane.columnIndex="2"
-            GridPane.fillWidth="True"
-            GridPane.fillHeight="True"
-            GridPane.halignment="CENTER" />
+    <!-- Files to Upload Pane -->
+    <GridPane fx:id="upload_pane"
+              GridPane.rowIndex="1"
+              GridPane.columnIndex="4"
+              GridPane.columnSpan="2"
+              GridPane.rowSpan="2"
+              GridPane.fillWidth="True"
+              GridPane.fillHeight="True">
 
+        <!-- Define a 2x2 grid for buttons -->
+        <columnConstraints>
+            <ColumnConstraints percentWidth="50" />
+            <ColumnConstraints percentWidth="50" />
+        </columnConstraints>
 
-    <Button text="Upload 2"
-            fx:id="upload_btn"
-            GridPane.rowIndex="1"
-            GridPane.columnIndex="3"
-            GridPane.fillWidth="True"
-            GridPane.fillHeight="True"
-            GridPane.halignment="CENTER" />
+        <rowConstraints>
+            <RowConstraints percentHeight="50" />
+            <RowConstraints percentHeight="50" />
+        </rowConstraints>
 
+        <!-- Components -->
+        <Button text="Upload 1"
+                fx:id="upload_btn"
+                GridPane.rowIndex="0"
+                GridPane.columnIndex="0"
+                GridPane.halignment="CENTER" />
 
-    <Button text="Upload 3"
-            fx:id="upload_btn"
-            GridPane.rowIndex="2"
-            GridPane.columnIndex="2"
-            GridPane.fillWidth="True"
-            GridPane.fillHeight="True"
-            GridPane.halignment="CENTER"  />
+        <Button text="Upload 2"
+                fx:id="upload_btn"
+                GridPane.rowIndex="0"
+                GridPane.columnIndex="1"
+                GridPane.halignment="CENTER" />
 
+        <Button text="Upload 3"
+                fx:id="upload_btn"
+                GridPane.rowIndex="1"
+                GridPane.columnIndex="0"
+                GridPane.halignment="CENTER" />
 
-    <Button text="Upload 4"
-            fx:id="upload_btn"
-            GridPane.rowIndex="2"
-            GridPane.columnIndex="3"
-            GridPane.fillWidth="True"
-            GridPane.fillHeight="True"
-            GridPane.halignment="CENTER"  />
-
+        <Button text="Upload 4"
+                fx:id="upload_btn"
+                GridPane.rowIndex="1"
+                GridPane.columnIndex="1"
+                GridPane.halignment="CENTER" />
+    </GridPane>
 
     <!-- Signature -->
-    <VBox GridPane.rowIndex="3"
-          GridPane.columnIndex="0"
+    <VBox fx:id="signature_box"
+          GridPane.rowIndex="3"
+          GridPane.columnIndex="1"
           GridPane.halignment="CENTER"
           GridPane.valignment="CENTER"
-          GridPane.columnSpan="4">
+          GridPane.columnSpan="5">
 
         <Label text="Signature"
                fx:id="signature_lbl"
-               GridPane.valignment="CENTER"
-               GridPane.halignment="CENTER"
                GridPane.fillHeight="True" />
 
-        <TextArea fx:id="signature"
-                  GridPane.valignment="CENTER"
-                  GridPane.halignment="CENTER" />
+        <TextArea fx:id="signature" />
     </VBox>
 </GridPane>

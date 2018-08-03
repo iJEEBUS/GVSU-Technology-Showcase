@@ -10,15 +10,14 @@ import java.io.IOException;
 public class new_print_controller {
 
     @FXML
-    public GridPane new_print;
+    public GridPane new_print_pane;
 
     /**
      * Changes the root scene back to the main hub
      */
     public void returnToHub() {
         try {
-
-            Stage stage = (Stage) new_print.getScene().getWindow();
+            Stage stage = (Stage) new_print_pane.getScene().getWindow();
             System.out.println();
             stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("main_hub.fxml")));
             stage.setFullScreen(true);

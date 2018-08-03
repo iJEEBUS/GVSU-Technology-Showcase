@@ -11,7 +11,7 @@ import java.io.IOException;
 public class new_rental_controller {
 
     @FXML
-    public GridPane new_rental;
+    public GridPane new_rental_pane;
 
     @FXML
     ComboBox tech_items;
@@ -21,8 +21,7 @@ public class new_rental_controller {
      */
     public void returnToHub() {
         try {
-
-            Stage stage = (Stage) new_rental.getScene().getWindow();
+            Stage stage = (Stage) new_rental_pane.getScene().getWindow();
             System.out.println();
             stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("main_hub.fxml")));
             stage.setFullScreen(true);
