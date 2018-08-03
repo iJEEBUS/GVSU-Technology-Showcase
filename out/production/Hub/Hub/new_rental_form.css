@@ -159,3 +159,21 @@
     -fx-font-size: 25pt;
     -fx-padding: 10,10,10,10;
 }
+
+#signature_lbl {
+
+    -fx-text-fill: #c7c7c7;
+    -fx-fill-width: true;
+    -fx-fill-height: true;
+    -fx-background-color: transparent;
+    -fx-font-size: 25pt;
+    -fx-padding: 10,10,10,10;
+}
+#signature {
+    -fx-control-inner-background: #c7c7c7;
+    -fx-highlight-fill: #3cc0f0;
+    -fx-highlight-text-fill: #1c1c1c;
+    -fx-text-fill: #1c1c1c;
+    -fx-font-size: 25pt;
+    -fx-padding: 10,10,10,10;
+}

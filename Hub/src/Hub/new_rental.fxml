@@ -173,12 +173,12 @@
           GridPane.columnSpan="2">
 
         <Label text="Signature"
-               fx:id="comments_lbl"
+               fx:id="signature_lbl"
                GridPane.valignment="CENTER"
                GridPane.halignment="CENTER"
                GridPane.fillHeight="True" />
 
-        <TextArea fx:id="comments"
+        <TextArea fx:id="signature"
                   GridPane.valignment="CENTER"
                   GridPane.halignment="CENTER" />
     </VBox>
