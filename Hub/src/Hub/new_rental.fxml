@@ -9,13 +9,10 @@
 <?import javafx.scene.control.ComboBox?>
 <?import java.lang.String?>
 <?import javafx.collections.FXCollections?>
-
-<?import javafx.scene.shape.SVGPath?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.DatePicker?>
+
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
           fx:controller="Hub.new_print_controller"
@@ -63,151 +60,127 @@
             GridPane.columnIndex="3"
             GridPane.rowIndex="0" />
 
-    <!-- Left Pane -->
-    <GridPane fx:id="rental_pane_left"
-            GridPane.columnIndex="0"
-            GridPane.columnSpan="2"
-            GridPane.rowIndex="1"
-            GridPane.rowSpan="2" >
+    <!-- Tech Dropdown Menu -->
 
-        <!-- Left Pane Layout -->
-        <columnConstraints>
-            <ColumnConstraints percentWidth="50" />
-            <ColumnConstraints percentWidth="50" />
-        </columnConstraints>
-
-        <rowConstraints>
-            <RowConstraints percentHeight="50" />
-            <RowConstraints percentHeight="50" />
-        </rowConstraints>
-
-        <!-- User Information -->
-        <TextField promptText="First name"
-                   fx:id="user_input"
-                   GridPane.rowIndex="0"
-                   GridPane.columnIndex="0"
-                    GridPane.fillWidth="false" />
-
-        <TextField promptText="Last name"
-                   fx:id="user_input"
-                   GridPane.rowIndex="0"
-                   GridPane.columnIndex="1"
-                   GridPane.fillWidth="false" />
-
-        <TextField promptText="Email"
-                   fx:id="user_input"
-                   GridPane.halignment="CENTER"
-                   GridPane.rowIndex="1"
-                   GridPane.columnIndex="0"
-                   GridPane.columnSpan="2"
-                   GridPane.fillWidth="true" />
-    </GridPane>
-
-    <!-- Right Pane -->
-    <GridPane
-            fx:id="rental_pane_right"
-            GridPane.columnIndex="2"
-            GridPane.columnSpan="2"
-            GridPane.rowIndex="1"
-            GridPane.rowSpan="2" >
-
-        <!-- Right Side Layout -->
-        <columnConstraints>
-            <ColumnConstraints percentWidth="50" />
-            <ColumnConstraints percentWidth="50" />
-        </columnConstraints>
-
-        <rowConstraints>
-            <RowConstraints percentHeight="50" />
-            <RowConstraints percentHeight="50" />
-        </rowConstraints>
-
-
-
-        <!-- Tech Dropdown Menu -->
-
-            <ComboBox promptText="-- Technology --"
-                    fx:id="tech_items"
-                      GridPane.rowIndex="0"
-                      GridPane.columnIndex="0"
-                      GridPane.halignment="CENTER"
-                      GridPane.valignment="CENTER"
-                      GridPane.fillHeight="True"
-                      GridPane.fillWidth="True" >
-                <items>
-                    <FXCollections
-                            fx:id="tech_items_dropdown"
-                            fx:factory="observableArrayList">
-                        <String fx:value="Aircharge" />
-                        <String fx:value="Amazon Echo" />
-                        <String fx:value="Amazon Show" />
-                        <String fx:value="Cubelets" />
-                        <String fx:value="Cyrano" />
-                        <String fx:value="Double Robot" />
-                        <String fx:value="Epic Mobile Projection Keyboard" />
-                        <String fx:value="HP Sprocket" />
-                        <String fx:value="HP Sprout" />
-                        <String fx:value="HTC Vive" />
-                        <String fx:value="L3D Cube" />
-                        <String fx:value="Leap Motion" />
-                        <String fx:value="LittleBits" />
-                        <String fx:value="Makeblock mBot Ranger" />
-                        <String fx:value="Merge Cube" />
-                        <String fx:value="Microsoft HoloLens" />
-                        <String fx:value="Oculus Go" />
-                        <String fx:value="Osmo" />
-                        <String fx:value="PhoneSoap" />
-                        <String fx:value="Ricoh Theta" />
-                        <String fx:value="Snap Specs" />
-                        <String fx:value="Sphero 2.0" />
-                    </FXCollections>
-                </items>
-            </ComboBox>
-
-        <!-- Additional Components -->
-        <VBox GridPane.rowIndex="0"
-              GridPane.columnIndex="1"
+    <ComboBox promptText="-- Technology --"
+              fx:id="tech_items"
+              GridPane.rowIndex="1"
+              GridPane.columnIndex="0"
               GridPane.halignment="CENTER"
-              GridPane.valignment="BOTTOM" >
+              GridPane.valignment="CENTER"
+              GridPane.fillHeight="True"
+              GridPane.fillWidth="True" >
+        <items>
+            <FXCollections
+                    fx:id="tech_items_dropdown"
+                    fx:factory="observableArrayList">
+                <String fx:value="Aircharge" />
+                <String fx:value="Amazon Echo" />
+                <String fx:value="Amazon Show" />
+                <String fx:value="Cubelets" />
+                <String fx:value="Cyrano" />
+                <String fx:value="Double Robot" />
+                <String fx:value="Epic Mobile Projection Keyboard" />
+                <String fx:value="HP Sprocket" />
+                <String fx:value="HP Sprout" />
+                <String fx:value="HTC Vive" />
+                <String fx:value="L3D Cube" />
+                <String fx:value="Leap Motion" />
+                <String fx:value="LittleBits" />
+                <String fx:value="Makeblock mBot Ranger" />
+                <String fx:value="Merge Cube" />
+                <String fx:value="Microsoft HoloLens" />
+                <String fx:value="Oculus Go" />
+                <String fx:value="Osmo" />
+                <String fx:value="PhoneSoap" />
+                <String fx:value="Ricoh Theta" />
+                <String fx:value="Snap Specs" />
+                <String fx:value="Sphero 2.0" />
+            </FXCollections>
+        </items>
+    </ComboBox>
 
-            <Label text="Additional Components"
-                   fx:id="additional_components_lbl"
-                   GridPane.valignment="CENTER"
-                   GridPane.halignment="CENTER"
-                   GridPane.fillHeight="True" />
+    <!-- User Information -->
+    <TextField promptText="First name"
+               fx:id="user_input"
+               GridPane.rowIndex="2"
+               GridPane.columnIndex="0"
+               GridPane.fillWidth="false" />
 
-            <TextArea
-                      fx:id="additional_components"
-                      GridPane.valignment="BOTTOM"
-                      GridPane.halignment="CENTER" />
-        </VBox>
+    <TextField promptText="Last name"
+               fx:id="user_input"
+               GridPane.rowIndex="2"
+               GridPane.columnIndex="1"
+               GridPane.fillWidth="false" />
 
-            <!-- Calendar -->
-            <DatePicker fx:id="return_date_picker"
-                        GridPane.valignment="CENTER"
-                        GridPane.halignment="CENTER"
-                        GridPane.fillHeight="True"
-                        GridPane.fillWidth="True"
-                        GridPane.rowIndex="1"
-                        GridPane.columnIndex="0" />
+    <TextField promptText="Email"
+               fx:id="user_input"
+               GridPane.halignment="CENTER"
+               GridPane.rowIndex="3"
+               GridPane.columnIndex="0"
+               GridPane.columnSpan="2"
+               GridPane.fillWidth="true" />
 
+    <!-- Calendar -->
+    <DatePicker fx:id="return_date_picker"
+                GridPane.valignment="CENTER"
+                GridPane.halignment="CENTER"
+                GridPane.fillHeight="True"
+                GridPane.fillWidth="True"
+                GridPane.rowIndex="1"
+                GridPane.columnIndex="1" />
 
+    <VBox GridPane.rowIndex="1"
+          GridPane.columnIndex="2"
+          GridPane.halignment="CENTER"
+          GridPane.valignment="BOTTOM"
+          GridPane.columnSpan="2">
 
-        <!-- Comments -->
-        <VBox GridPane.rowIndex="1"
-              GridPane.columnIndex="1"
-              GridPane.halignment="CENTER"
-              GridPane.valignment="CENTER" >
+        <Label text="Additional Components"
+               fx:id="additional_components_lbl"
+               GridPane.valignment="CENTER"
+               GridPane.halignment="CENTER"
+               GridPane.fillHeight="True"/>
+        <TextArea
+            fx:id="additional_components"
+            GridPane.valignment="BOTTOM"
+            GridPane.halignment="CENTER" />
+    </VBox>
 
-            <Label text="Comments"
-                   fx:id="comments_lbl"
-                   GridPane.valignment="CENTER"
-                   GridPane.halignment="CENTER"
-                   GridPane.fillHeight="True" />
+    <!-- Comments -->
+    <VBox GridPane.rowIndex="2"
+          GridPane.columnIndex="2"
+          GridPane.halignment="CENTER"
+          GridPane.valignment="CENTER"
+          GridPane.columnSpan="2">
 
-            <TextArea fx:id="comments"
-                      GridPane.valignment="CENTER"
-                      GridPane.halignment="CENTER" />
-        </VBox>
-    </GridPane>
+        <Label text="Comments"
+               fx:id="comments_lbl"
+               GridPane.valignment="CENTER"
+               GridPane.halignment="CENTER"
+               GridPane.fillHeight="True" />
+
+        <TextArea fx:id="comments"
+                  GridPane.valignment="CENTER"
+                  GridPane.halignment="CENTER" />
+    </VBox>
+
+    <!-- Signature -->
+    <VBox GridPane.rowIndex="3"
+          GridPane.columnIndex="2"
+          GridPane.halignment="CENTER"
+          GridPane.valignment="CENTER"
+          GridPane.columnSpan="2">
+
+        <Label text="Signature"
+               fx:id="comments_lbl"
+               GridPane.valignment="CENTER"
+               GridPane.halignment="CENTER"
+               GridPane.fillHeight="True" />
+
+        <TextArea fx:id="comments"
+                  GridPane.valignment="CENTER"
+                  GridPane.halignment="CENTER" />
+    </VBox>
+
 </GridPane>

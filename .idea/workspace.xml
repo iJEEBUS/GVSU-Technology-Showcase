@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a05ed9ce-81b4-4ba8-81fe-aec5d00f00fd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Shallots.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/Shallots.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/main_hub.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/main_hub.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_print.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_print.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_print.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_print.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/print_queue.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/print_queue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/print_queue.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/print_queue.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/rental_queue.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/rental_queue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/rental_queue.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/rental_queue.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/time_clock.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/time_clock.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/time_clock.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/time_clock.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new_rental.fxml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="new_rental.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="147" column="20" lean-forward="true" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+            <state relative-caret-position="589">
+              <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_rental_form.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="new_rental_form.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="862">
-              <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+            <state relative-caret-position="617">
+              <caret line="127" column="20" lean-forward="false" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -84,8 +74,8 @@
         <option value="$PROJECT_DIR$/Hub/src/Hub/print_queue.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/new_print.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/new_print.fxml" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" />
       </list>
     </option>
   </component>
@@ -312,12 +302,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533233198807</updated>
-      <workItem from="1533233200112" duration="33605000" />
+      <workItem from="1533233200112" duration="35809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33605000" />
+    <option name="totallyTimeSpent" value="35809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1074" y="22" width="974" height="1258" extended-state="0" />
@@ -546,23 +536,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="127" column="20" lean-forward="false" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="147" column="20" lean-forward="true" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+        <state relative-caret-position="589">
+          <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
   </component>
