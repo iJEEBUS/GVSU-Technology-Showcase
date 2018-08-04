@@ -90,25 +90,29 @@ public class new_print_controller {
      * Sets the second buttons new icon if successful.
      */
     public void getSecondFile() {
-        if (handleFile() == Boolean.TRUE) {
-            upload_btn_2.setText(temp_file.getName());
-            upload_btn_2.setId("file_loaded_btn");
-            upload_btn_2_filled = Boolean.TRUE;
+        if (upload_btn_2_filled == Boolean.FALSE) {
+            if (handleFile() == Boolean.TRUE) {
+                upload_btn_2.setText(temp_file.getName());
+                upload_btn_2.setId("file_loaded_btn");
+                upload_btn_2_filled = Boolean.TRUE;
+            }
         } else {
             removeFile(2);
             upload_btn_2_filled = Boolean.FALSE;
         }
-}
+    }
 
     /**
      * Calls on handleFile helper method to get file from user.
      * Sets the second buttons new icon if successful.
      */
     public void getThirdFile() {
-        if (handleFile() == Boolean.TRUE){
-            upload_btn_3.setText(temp_file.getName());
-            upload_btn_3.setId("file_loaded_btn");
-            upload_btn_3_filled = Boolean.TRUE;
+        if (upload_btn_3_filled == Boolean.FALSE) {
+            if (handleFile() == Boolean.TRUE){
+                upload_btn_3.setText(temp_file.getName());
+                upload_btn_3.setId("file_loaded_btn");
+                upload_btn_3_filled = Boolean.TRUE;
+            }
         } else {
             removeFile(3);
             upload_btn_3_filled = Boolean.FALSE;
@@ -120,10 +124,12 @@ public class new_print_controller {
      * Sets the second buttons new icon if successful.
      */
     public void getFourthFile() {
-        if (handleFile() == Boolean.TRUE) {
-            upload_btn_4.setText(temp_file.getName());
-            upload_btn_4.setId("file_loaded_btn");
-            upload_btn_4_filled = Boolean.TRUE;
+        if (upload_btn_4_filled == Boolean.FALSE) {
+            if (handleFile() == Boolean.TRUE){
+                upload_btn_4.setText(temp_file.getName());
+                upload_btn_4.setId("file_loaded_btn");
+                upload_btn_4_filled = Boolean.TRUE;
+            }
         } else {
             removeFile(4);
             upload_btn_4_filled = Boolean.FALSE;
@@ -170,18 +176,24 @@ public class new_print_controller {
     private void removeFile(int btn) {
 
         int btn_number = btn;
-        Button upload_btn;
+        Button upload_btn = null;
 
         // Determine which button to change
         switch (btn_number) {
             case 1:
                 upload_btn = upload_btn_1;
+                break;
             case 2:
                 upload_btn = upload_btn_2;
+                break;
             case 3:
-                upload_btn = upload_btn_3:
+                upload_btn = upload_btn_3;
+                break;
             case 4:
                 upload_btn = upload_btn_4;
+                break;
+            default:
+                break;
         }
 
         // Loop through queue
@@ -194,7 +206,7 @@ public class new_print_controller {
             if (filename.equals(btn_txt)) {
                 temporary_file_queue.remove(file);
                 upload_btn.setText("Upload");
-                upload_btn.setId(upload_btn.getText());
+                upload_btn.setId("upload_btn_" + Integer.toString(btn_number));
             }
         }
     }
@@ -213,7 +225,5 @@ public class new_print_controller {
     public void submitOrder() {
         clearTemporaryQueue();
         returnToHub();
-
     }
-
 }
