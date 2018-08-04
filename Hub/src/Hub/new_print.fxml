@@ -123,26 +123,32 @@
         </rowConstraints>
 
         <!-- Components -->
-        <Button text="Upload 1"
-                fx:id="upload_btn"
+        <Button text="Upload"
+                fx:id="upload_btn_1"
+                onAction="#getFirstFile"
+                GridPane.fillHeight="True"
+                GridPane.fillWidth="True"
                 GridPane.rowIndex="0"
                 GridPane.columnIndex="0"
                 GridPane.halignment="CENTER" />
 
-        <Button text="Upload 2"
-                fx:id="upload_btn"
+        <Button text="Upload"
+                fx:id="upload_btn_2"
+                onAction="#getSecondFile"
                 GridPane.rowIndex="0"
                 GridPane.columnIndex="1"
                 GridPane.halignment="CENTER" />
 
-        <Button text="Upload 3"
-                fx:id="upload_btn"
+        <Button text="Upload"
+                fx:id="upload_btn_3"
+                onAction="#getThirdFile"
                 GridPane.rowIndex="1"
                 GridPane.columnIndex="0"
                 GridPane.halignment="CENTER" />
 
-        <Button text="Upload 4"
-                fx:id="upload_btn"
+        <Button text="Upload"
+                fx:id="upload_btn_4"
+                onAction="#getFourthFile"
                 GridPane.rowIndex="1"
                 GridPane.columnIndex="1"
                 GridPane.halignment="CENTER" />

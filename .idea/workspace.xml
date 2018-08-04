@@ -5,9 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_print.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_print.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_print.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_print.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,56 +19,27 @@
       <FILTER>Hub.*</FILTER>
     </SUITE>
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="new_rental_form.css" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="473">
-                    <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new_print.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print.css">
+      <file leaf-file-name="new_print_controller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="83" column="25" lean-forward="false" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="2160">
+              <caret line="164" column="0" lean-forward="true" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+              <folding>
+                <element signature="e#787#793#0" expanded="true" />
+                <element signature="e#6235#6236#0" expanded="true" />
+                <element signature="e#6279#6280#0" expanded="true" />
+              </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new_rental.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="37" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="new_print.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+            <state relative-caret-position="423">
+              <caret line="127" column="34" lean-forward="false" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -80,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shallots.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Shallots.css">
+      <file leaf-file-name="new_print.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="438">
+              <caret line="86" column="22" lean-forward="true" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -95,8 +63,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>back</find>
-      <find>new_print</find>
       <find>&lt;/Gridpane</find>
+      <find>new_print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,12 +87,12 @@
         <option value="$PROJECT_DIR$/Hub/src/Hub/time_clock.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/rental_queue.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/print_queue.css" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/new_print.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/new_print.css" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/new_print.fxml" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java" />
       </list>
     </option>
   </component>
@@ -135,9 +103,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="84" />
+    <option name="x" value="745" />
     <option name="y" value="22" />
-    <option name="width" value="798" />
+    <option name="width" value="935" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -351,15 +319,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533233198807</updated>
-      <workItem from="1533233200112" duration="43806000" />
+      <workItem from="1533233200112" duration="54002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43806000" />
+    <option name="totallyTimeSpent" value="54002000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="84" y="22" width="798" height="1028" extended-state="0" />
+    <frame x="745" y="22" width="935" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -371,12 +339,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26046026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0012531328" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26046026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0010695187" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20426065" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20855615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.249658" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -550,31 +518,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Shallots.css">
@@ -585,10 +534,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="61" column="2" lean-forward="false" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="37" selection-end-column="46" />
+        <state relative-caret-position="-1902">
+          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -596,19 +553,42 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print.css">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/regex/Pattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="83" column="25" lean-forward="false" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+        <state relative-caret-position="205">
+          <caret line="768" column="19" lean-forward="false" selection-start-line="768" selection-start-column="19" selection-end-line="768" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css">
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+        <state relative-caret-position="438">
+          <caret line="86" column="22" lean-forward="true" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="127" column="34" lean-forward="false" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="164" column="0" lean-forward="true" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding>
+            <element signature="e#787#793#0" expanded="true" />
+            <element signature="e#6235#6236#0" expanded="true" />
+            <element signature="e#6279#6280#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

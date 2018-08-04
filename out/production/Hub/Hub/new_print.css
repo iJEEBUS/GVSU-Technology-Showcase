@@ -87,15 +87,25 @@
     -fx-padding: 10px;
 }
 
-#upload_btn {
+#upload_btn_1, #upload_btn_2, #upload_btn_3, #upload_btn_4 {
     -fx-background-color: transparent;
     -fx-text-fill: #c7c7c7;
     -fx-font-size: 20px;
 }
 
-#upload_btn:hover {
+#upload_btn_1:hover, #upload_btn_2:hover, #upload_btn_3:hover, #upload_btn_4:hover {
     -fx-text-fill: ghostwhite;
     -fx-font-size: 25px;
+}
+
+#file_loaded_btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #B3EFB2;
+    -fx-font-size: 25px;
+}
+
+#file_loaded_btn:hover {
+    -fx-text-fill: red;
 }
 
 /* Signature */
