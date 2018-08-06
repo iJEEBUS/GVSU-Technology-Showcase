@@ -8,6 +8,8 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToggleButton?>
+
 
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
@@ -17,21 +19,21 @@
 
     <!-- Entire Pane Layout -->
     <columnConstraints>
-        <ColumnConstraints percentWidth="2.5" />
-        <ColumnConstraints percentWidth="23.5" />
-        <ColumnConstraints percentWidth="23.5" />
-        <ColumnConstraints percentWidth="2.5" />
-        <ColumnConstraints percentWidth="23.5" />
-        <ColumnConstraints percentWidth="23.5" />
-        <ColumnConstraints percentWidth="2.5" />
+        <ColumnConstraints percentWidth="2.5" />    <!-- 0 -->
+        <ColumnConstraints percentWidth="23.5" />   <!-- 1 -->
+        <ColumnConstraints percentWidth="23.5" />   <!-- 2 -->
+        <ColumnConstraints percentWidth="2.5" />    <!-- 3 -->
+        <ColumnConstraints percentWidth="23.5" />   <!-- 4 -->
+        <ColumnConstraints percentWidth="23.5" />   <!-- 5 -->
+        <ColumnConstraints percentWidth="2.5" />    <!-- 6 -->
     </columnConstraints>
-
     <rowConstraints>
-        <RowConstraints percentHeight="24" />
-        <RowConstraints percentHeight="24" />
-        <RowConstraints percentHeight="24" />
-        <RowConstraints percentHeight="24" />
-        <RowConstraints percentHeight="2.5" />
+        <RowConstraints percentHeight="24" />   <!-- 0 -->
+        <RowConstraints percentHeight="24" />   <!-- 1 -->
+        <RowConstraints percentHeight="24" />   <!-- 2 -->
+        <RowConstraints percentHeight="1.25" /> <!-- 3 -->
+        <RowConstraints percentHeight="24" />   <!-- 4 -->
+        <RowConstraints percentHeight="1.25" /> <!-- 5 -->
     </rowConstraints>
 
     <!-- Header Components -->
@@ -42,7 +44,6 @@
            GridPane.columnIndex="0"
            GridPane.columnSpan="7"
            GridPane.rowIndex="0" />
-
     <Button text="Return"
             fx:id="back_btn"
             onAction="#returnToHub"
@@ -51,15 +52,15 @@
             GridPane.columnIndex="1"
             GridPane.rowIndex="0">
     </Button>
-
     <Button text="Submit"
             fx:id="submit_btn"
-            onAction="#submitOrder"
+            onAction="#insertPrintQuery"
             GridPane.halignment="RIGHT"
             GridPane.valignment="TOP"
             GridPane.columnIndex="5"
             GridPane.rowIndex="0" />
 
+    <!-- Pane layouts -->
     <!-- User Information Pane -->
     <GridPane fx:id="user_info_pane"
               GridPane.rowIndex="1"
@@ -82,19 +83,19 @@
 
         <!-- Components -->
         <TextField promptText="First name"
-               fx:id="user_input"
+               fx:id="user_input_first_name"
                GridPane.rowIndex="0"
                GridPane.columnIndex="0"
                GridPane.fillWidth="false" />
 
         <TextField promptText="Last name"
-               fx:id="user_input"
+               fx:id="user_input_last_name"
                GridPane.rowIndex="0"
                GridPane.columnIndex="1"
                GridPane.fillWidth="false" />
 
         <TextField promptText="Email"
-               fx:id="user_input"
+               fx:id="user_input_email"
                GridPane.halignment="CENTER"
                GridPane.rowIndex="1"
                GridPane.columnIndex="0"
@@ -154,13 +155,72 @@
                 GridPane.halignment="CENTER" />
     </GridPane>
 
+    <!-- For Class Info -->
+    <GridPane fx:id="class_info"
+              GridPane.columnIndex="1"
+              GridPane.rowIndex="4"
+              GridPane.columnSpan="2">
+
+        <columnConstraints>
+            <ColumnConstraints percentWidth="50" />
+            <ColumnConstraints percentWidth="50" />
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints percentHeight="10" />
+            <RowConstraints percentHeight="45" />
+            <RowConstraints percentHeight="45" />
+        </rowConstraints>
+
+            <Label fx:id="for_class_lbl"
+                   text="For a class?"
+                   GridPane.rowIndex="0"
+                   GridPane.columnIndex="0"
+                   GridPane.fillWidth="True"
+                   GridPane.fillHeight="True"
+                   GridPane.halignment="CENTER" />
+
+            <ToggleButton fx:id="yes_btn"
+                          text="Yes"
+                          toggleGroup="$for_class_toggle"
+                          GridPane.rowIndex="1"
+                          GridPane.columnIndex="0"
+                          GridPane.fillWidth="True"
+                          GridPane.fillHeight="True"
+                          GridPane.halignment="CENTER" />
+
+            <ToggleButton fx:id="no_btn"
+                          text="No"
+                          toggleGroup="$for_class_toggle"
+                          GridPane.rowIndex="2"
+                          GridPane.columnIndex="0"
+                          GridPane.fillWidth="True"
+                          GridPane.fillHeight="True"
+                          GridPane.halignment="CENTER" />
+
+        <!-- Right side of bottom left pane -->
+            <TextField promptText="Class"
+                       fx:id="class_name_input"
+                       GridPane.rowIndex="1"
+                       GridPane.columnIndex="1"
+                       GridPane.halignment="CENTER"
+                       GridPane.fillHeight="True"
+                       GridPane.fillWidth="True"/>
+            <Button text="Upload"
+                    fx:id="upload_class_file_btn"
+                    GridPane.rowIndex="2"
+                    GridPane.columnIndex="1"
+                    GridPane.halignment="CENTER"
+                    GridPane.fillHeight="True"
+                    GridPane.fillWidth="True" />
+    </GridPane>
     <!-- Signature -->
     <VBox fx:id="signature_box"
-          GridPane.rowIndex="3"
-          GridPane.columnIndex="1"
+          GridPane.rowIndex="4"
+          GridPane.columnIndex="4"
           GridPane.halignment="CENTER"
           GridPane.valignment="CENTER"
-          GridPane.columnSpan="5">
+          GridPane.columnSpan="2">
 
         <Label text="Signature"
                fx:id="signature_lbl"

@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -17,10 +18,10 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.util.ArrayList;
-import java.util.Queue;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class new_print_controller {
 
@@ -41,19 +42,26 @@ public class new_print_controller {
 
     @FXML
     public GridPane new_print_pane;
-
     @FXML
     public Button upload_btn_1;
-
     @FXML
     public Button upload_btn_2;
-
     @FXML
     public Button upload_btn_3;
-
     @FXML
     public Button upload_btn_4;
 
+    @FXML
+    public TextField user_input_first_name;
+    @FXML
+    public TextField user_input_last_name;
+    @FXML
+    public TextField user_input_email;
+
+    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
+    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
+    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
+    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
     /**
      * Changes the root scene back to the main hub
      */
@@ -67,6 +75,10 @@ public class new_print_controller {
             io.printStackTrace();
         }
     }
+    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
+    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
+    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
+    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
 
     /**
      * Calls on handleFile helper method to get file from user.
@@ -212,18 +224,89 @@ public class new_print_controller {
     }
 
     /**
-     * Clears the temporary queue used to hold the four files to be
-     * uploaded.
+     * Submits the order as an SQL query to the database.
+     * Clears the hubs temporary queue of prints.
+     * Returns to the main screen of the hub.
      */
-    private void clearTemporaryQueue() {
+    public void submitOrder() {
+        createPrintQuery();
         temporary_file_queue.clear();
+        returnToHub();
     }
 
     /**
-     * Submits the order as an SQL query to the databases.
+     * Creates and sends a query to the database with all of the
+     * needed user inputs.
      */
-    public void submitOrder() {
+    public void createPrintQuery() {
+        System.out.println("Generating query to submit....");
+
+        // make sure that all of the text boxes are filled
+        if (user_input_first_name != null
+                & user_input_last_name != null
+                & user_input_email != null) {
+
+            String query = "INSERT INTO prints (last_name, first_name, email) VALUES (?,?,?)";
+            System.out.println("Query skeleton created.");
+
+
+            // Connect to and send query to database
+            try {
+                System.out.println("Connecting to database....");
+                Connection myConn = connectToDatabase();
+
+                // Check if connection exists.
+                // If no, try to reconnect 5 times before quitting.
+                if (myConn != null) {
+                    System.out.println("Adding meat to query bones....");
+                    PreparedStatement final_statement = myConn.prepareStatement(query);
+                    final_statement.setString(1,user_input_last_name.getText());
+                    final_statement.setString(2, user_input_first_name.getText());
+                    final_statement.setString(3, user_input_email.getText());
+                    final_statement.execute();
+                    System.out.println("Query executed.");
+                    System.out.println("Killing connection to database...:(");
+                } else {
+                    for (int i = 0; i < 5; i++) {
+                        myConn = connectToDatabase();
+                        if (myConn != null) {
+                            throw new Exception("Database connection not stable. Check and try again.");
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                System.out.println("Connection failed. Check connection and try again.");
+                e.printStackTrace();
+            }
+        }
+
         clearTemporaryQueue();
         returnToHub();
+    }
+
+    /**
+     * Creates a connection to the local mySQL database.
+     * Used as a helper method for the createPrintQuery function.
+     */
+
+    private Connection connectToDatabase() {
+        try {
+            String url = "jdbc:mysql://localhost:3306/Tech_Showcase?autoReconnect=true&useSSL=false";
+            String user = "root";
+            String password = "*** *** *** ***";
+
+            // Create connection
+            Connection myConn = DriverManager.getConnection(url, user, password);
+            if (myConn != null) {
+                System.out.println("Connection success.");
+                return myConn;
+            } else {
+                System.out.println("Connection failed. Check connection and try again.");
+            }
+        } catch (Exception e) {
+            System.out.println("Connection failed. Check connection and try again.");
+            e.printStackTrace();
+        }
+        return null;
     }
 }

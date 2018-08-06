@@ -36,7 +36,7 @@
     -fx-text-fill: grey;
     -fx-fill-width: true;
     -fx-fill-height: true;
-    -fx-background-color: #1c1c1c;
+    -fx-background-color: transparent;
     -fx-font-size: 35pt;
 }
 

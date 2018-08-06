@@ -2,18 +2,15 @@
 .root {
     -fx-background-color: linear-gradient(to top right, #1c1c1c, #414141, #1c1c1c);
 }
-
 /* Main Pane */
 #new_print_pane {
 }
-
 /* Header */
 #title_lbl {
     -fx-font-family: "Avenir", serif;
     -fx-font-size: 110pt;
     -fx-text-fill: #1974bb;
 }
-
 #back_btn {
     -fx-text-fill: #c7c7c7;
     -fx-fill-width: true;
@@ -21,13 +18,11 @@
     -fx-background-color: transparent;
     -fx-font-size: 35pt;
 }
-
 #back_btn:hover {
     -fx-text-fill: ghostwhite;
     -fx-fill-height: true;
     -fx-font-size: 40pt;
 }
-
 #submit_btn {
     -fx-text-fill: #c7c7c7;
     -fx-fill-width: true;
@@ -35,12 +30,12 @@
     -fx-background-color: transparent;
     -fx-font-size: 35pt;
 }
-
 #submit_btn:hover {
     -fx-text-fill: #B3EFB2;
     -fx-fill-height: true;
     -fx-font-size: 40pt;
 }
+
 
 /* Left Pane */
 /* User Information */
@@ -53,7 +48,9 @@
     -fx-border-radius: 25px;
     -fx-padding: 10px;
 }
-#user_input {
+#user_input_first_name,
+#user_input_last_name,
+#user_input_email {
     -fx-background-color: transparent;
     -fx-font-size: 35pt;
     -fx-text-fill: ghostwhite;
@@ -66,14 +63,56 @@
     -fx-border-insets: 20,20,20,20;
 }
 
-#user_input:focused {
+#user_input_first_name:focused,
+#user_input_last_name:focused,
+#user_input_email:focused,
+#class_name_input:focused {
 
     -fx-font-size: 40pt;
 }
 
-#user_input:hover {
+#user_input_first_name:focused,
+#user_input_last_name:focused,
+#user_input_email:focused,
+#class_name_input:hover {
     -fx-font-size: 40pt;
 }
+/* Bottom Left Pane (Class Information) */
+#class_info {
+    -fx-background-color: transparent;
+    -fx-border-width: 0.5;
+    -fx-border-color: #3cc0f0;
+    -fx-border-radius: 25;
+}
+#yes_btn, #no_btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #c7c7c7;
+    -fx-font-size: 20px;
+}
+#yes_btn:hover {
+    -fx-text-fill: #B3EFB2;
+    -fx-fill-height: true;
+    -fx-font-size: 40pt;
+}
+#yes_btn:focused {
+    -fx-text-fill: #B3EFB2;
+    -fx-fill-height: true;
+    -fx-font-size: 40pt;
+}
+#class_name_input {
+
+}
+#upload_class_file_btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #c7c7c7;
+    -fx-font-size: 20px;
+}
+#for_class_lbl {
+    -fx-background-color: transparent;
+    -fx-text-fill: #c7c7c7;
+    -fx-font-size: 20px;
+}
+
 
 /* Right Pane */
 /* Upload Buttons */
@@ -87,13 +126,19 @@
     -fx-padding: 10px;
 }
 
-#upload_btn_1, #upload_btn_2, #upload_btn_3, #upload_btn_4 {
+#upload_btn_1,
+#upload_btn_2,
+#upload_btn_3,
+#upload_btn_4 {
     -fx-background-color: transparent;
     -fx-text-fill: #c7c7c7;
     -fx-font-size: 20px;
 }
 
-#upload_btn_1:hover, #upload_btn_2:hover, #upload_btn_3:hover, #upload_btn_4:hover {
+#upload_btn_1:hover,
+#upload_btn_2:hover,
+#upload_btn_3:hover,
+#upload_btn_4:hover {
     -fx-text-fill: ghostwhite;
     -fx-font-size: 25px;
 }
@@ -109,11 +154,9 @@
 }
 
 /* Signature */
-
 #signature_box {
     -fx-pref-height: 50%;
 }
-
 #signature_lbl {
     -fx-text-fill: #c7c7c7;
     -fx-fill-width: true;
@@ -122,7 +165,6 @@
     -fx-font-size: 25pt;
     -fx-padding: 10,10,10,10;
 }
-
 #signature {
     -fx-control-inner-background: #c7c7c7;
     -fx-highlight-fill: #3cc0f0;
@@ -132,7 +174,6 @@
     -fx-border-width: 5px;
     -fx-border-color: white;
 }
-
 #signature:focused {
     -fx-border-width: 5px;
     -fx-border-color: #3cc0f0;
