@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a05ed9ce-81b4-4ba8-81fe-aec5d00f00fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_45_bin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Hub/src/Hub/Database.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Hub/src/Hub/Navigation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/Hub.iml" afterPath="$PROJECT_DIR$/Hub/Hub.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_print.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_print.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_print.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_print.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/print_queue.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/print_queue.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/print_queue.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/print_queue.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/print_queue_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/print_queue_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/rental_queue.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/rental_queue.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/rental_queue.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/rental_queue.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/rental_queue_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/rental_queue_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/time_clock.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/time_clock.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/time_clock_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/time_clock_controller.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,41 +33,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new_print_controller.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java">
+      <file leaf-file-name="print_queue.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/print_queue.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="295" column="46" lean-forward="false" selection-start-line="295" selection-start-column="46" selection-end-line="295" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#832#838#0" expanded="true" />
-                <element signature="method#getFirstFile#0;class#new_print_controller#0" expanded="false" />
-                <element signature="method#getSecondFile#0;class#new_print_controller#0" expanded="false" />
-                <element signature="method#getThirdFile#0;class#new_print_controller#0" expanded="false" />
-                <element signature="method#getFourthFile#0;class#new_print_controller#0" expanded="false" />
-                <element signature="method#handleFile#0;class#new_print_controller#0" expanded="false" />
-                <element signature="method#removeFile#0;class#new_print_controller#0" expanded="false" />
-                <element signature="method#submitOrder#0;class#new_print_controller#0" expanded="false" />
-                <element signature="method#createPrintQuery#0;class#new_print_controller#0" expanded="false" />
-                <marker date="1533535372046" expanded="true" signature="8158:8222" ph="INSERT INTO prints... " />
-              </folding>
+            <state relative-caret-position="585">
+              <caret line="39" column="83" lean-forward="false" selection-start-line="39" selection-start-column="83" selection-end-line="39" selection-end-column="83" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_print.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print.fxml">
+      <file leaf-file-name="print_queue_controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/print_queue_controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="56" column="34" lean-forward="false" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
-              <folding>
-                <element signature="n#columnConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
-                <element signature="n#rowConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
-                <element signature="n#Label#0;n#GridPane#0;n#!!top" expanded="false" />
-                <element signature="n#Button#0;n#GridPane#0;n#!!top" expanded="false" />
-                <element signature="n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-                <element signature="n#VBox#0;n#GridPane#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="print_queue.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/print_queue.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
@@ -67,76 +66,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_print.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print.css">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-              <folding>
-                <element signature="e#28#115#0" expanded="false" />
-                <element signature="e#148#151#0" expanded="false" />
-                <element signature="e#176#271#0" expanded="false" />
-                <element signature="e#282#430#0" expanded="false" />
-                <element signature="e#447#533#0" expanded="false" />
-                <element signature="e#546#694#0" expanded="false" />
-                <element signature="e#713#796#0" expanded="false" />
-                <element signature="e#854#1059#0" expanded="false" />
-                <element signature="e#1125#1399#0" expanded="false" />
-                <element signature="e#1517#1546#0" expanded="false" />
-                <element signature="e#1662#1690#0" expanded="false" />
-                <element signature="e#1746#1873#0" expanded="false" />
-                <element signature="e#1892#1987#0" expanded="false" />
-                <element signature="e#2003#2086#0" expanded="false" />
-                <element signature="e#2104#2187#0" expanded="false" />
-                <element signature="e#2206#2210#0" expanded="false" />
-                <element signature="e#2234#2329#0" expanded="false" />
-                <element signature="e#2345#2440#0" expanded="false" />
-                <element signature="e#2494#2699#0" expanded="false" />
-                <element signature="e#2760#2855#0" expanded="false" />
-                <element signature="e#2940#2999#0" expanded="false" />
-                <element signature="e#3018#3113#0" expanded="false" />
-                <element signature="e#3138#3165#0" expanded="false" />
-                <element signature="e#3198#3227#0" expanded="false" />
-                <element signature="e#3243#3421#0" expanded="false" />
-                <element signature="e#3433#3659#0" expanded="false" />
-                <element signature="e#3679#3740#0" expanded="false" />
-              </folding>
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_rental_form.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css">
+      <file leaf-file-name="Database.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="37" column="15" lean-forward="false" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+            <state relative-caret-position="228">
+              <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding>
-                <element signature="e#28#115#0" expanded="false" />
-                <element signature="e#141#236#0" expanded="false" />
-                <element signature="e#247#395#0" expanded="false" />
-                <element signature="e#412#498#0" expanded="false" />
-                <element signature="e#511#659#0" expanded="false" />
-                <element signature="e#678#761#0" expanded="false" />
-                <element signature="e#814#1035#0" expanded="false" />
-                <element signature="e#1052#1203#0" expanded="false" />
-                <element signature="e#1216#1313#0" expanded="false" />
-                <element signature="e#1336#1462#0" expanded="false" />
-                <element signature="e#1491#1554#0" expanded="false" />
-                <element signature="e#1587#1735#0" expanded="false" />
-                <element signature="e#1756#2013#0" expanded="false" />
-                <element signature="e#2026#2346#0" expanded="false" />
-                <element signature="e#2367#2426#0" expanded="false" />
-                <element signature="e#2445#2504#0" expanded="false" />
-                <element signature="e#2579#2757#0" expanded="false" />
-                <element signature="e#2781#3007#0" expanded="false" />
-                <element signature="e#3039#3100#0" expanded="false" />
-                <element signature="e#3113#3260#0" expanded="false" />
-                <element signature="e#3290#3468#0" expanded="false" />
-                <element signature="e#3479#3705#0" expanded="false" />
-                <element signature="e#3724#3785#0" expanded="false" />
-                <element signature="e#3801#3979#0" expanded="false" />
-                <element signature="e#3991#4217#0" expanded="false" />
-                <element signature="e#4237#4298#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#kill#0;class#Database#0" expanded="false" />
+                <element signature="method#sendPrintQuery#0;class#Database#0" expanded="false" />
+                <element signature="method#sendRentalQuery#0;class#Database#0" expanded="false" />
+                <element signature="method#refreshPrintQueue#0;class#Database#0" expanded="false" />
+                <marker date="1533541311115" expanded="true" signature="1746:1795" ph="INSERT INTO prints... " />
+                <marker date="1533541311115" expanded="true" signature="1746:1842" ph="INSERT INTO prints... " />
+                <marker date="1533541311115" expanded="true" signature="3794:3883" ph="INSERT INTO rentals... " />
+                <marker date="1533541311115" expanded="true" signature="5538:5558" ph="SELECT * FRO... prints" />
               </folding>
             </state>
           </provider>
@@ -144,11 +98,21 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>back</find>
       <find>&lt;/Gridpane</find>
       <find>add</find>
+      <find>user_input_first_name</find>
+      <find>user_input_last_name</find>
+      <find>user_input_email</find>
       <find>new_print</find>
     </findStrings>
   </component>
@@ -164,20 +128,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Hub/src/Hub/Main.java" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/time_clock.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/main_hub.fxml" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/rental_queue.fxml" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/print_queue.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Shallots.css" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/rental_queue.css" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/print_queue.css" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/time_clock.css" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/new_print.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/new_print.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/Navigation.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/time_clock_controller.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/time_clock.fxml" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/rental_queue_controller.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/print_queue_controller.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/rental_queue.fxml" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/rental_queue.css" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/print_queue.css" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/print_queue.fxml" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/Database.java" />
       </list>
     </option>
   </component>
@@ -188,9 +157,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="124" />
+    <option name="x" value="546" />
     <option name="y" value="22" />
-    <option name="width" value="1155" />
+    <option name="width" value="1203" />
     <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -221,6 +190,17 @@
               <item name="GVSU-Technology-Showcase" type="b2602c69:ProjectViewProjectNode" />
               <item name="Hub" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GVSU-Technology-Showcase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hub" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GVSU-Technology-Showcase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hub" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Hub" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GVSU-Technology-Showcase" type="b2602c69:ProjectViewProjectNode" />
@@ -388,15 +368,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533233198807</updated>
-      <workItem from="1533233200112" duration="71182000" />
+      <workItem from="1533233200112" duration="76926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71182000" />
+    <option name="totallyTimeSpent" value="76926000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="124" y="22" width="1155" height="1058" extended-state="0" />
+    <frame x="546" y="22" width="1203" height="1058" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -409,12 +389,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2535497" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="8.658009E-4" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="8.312552E-4" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11082251" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33665836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.249658" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -425,7 +406,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -465,7 +445,25 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Hub/src/Hub/Database.java</url>
+          <line>52</line>
+          <properties class="Hub.Database" method="sendPrintQuery">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java</url>
+          <line>217</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -473,14 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -509,17 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/time_clock.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Icons/Custom/left-arrow.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -541,69 +520,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/rental_queue.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/rental_queue.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/print_queue.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/print_queue.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Shallots.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1902">
-          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/regex/Pattern.java">
@@ -630,10 +552,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/time_clock.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/time_clock_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="37" column="15" lean-forward="false" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+        <state relative-caret-position="525">
+          <caret line="114" column="28" lean-forward="false" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
           <folding>
             <element signature="e#28#115#0" expanded="false" />
             <element signature="e#141#236#0" expanded="false" />
@@ -646,45 +595,66 @@
             <element signature="e#1216#1313#0" expanded="false" />
             <element signature="e#1336#1462#0" expanded="false" />
             <element signature="e#1491#1554#0" expanded="false" />
-            <element signature="e#1587#1735#0" expanded="false" />
-            <element signature="e#1756#2013#0" expanded="false" />
-            <element signature="e#2026#2346#0" expanded="false" />
-            <element signature="e#2367#2426#0" expanded="false" />
-            <element signature="e#2445#2504#0" expanded="false" />
-            <element signature="e#2579#2757#0" expanded="false" />
-            <element signature="e#2781#3007#0" expanded="false" />
-            <element signature="e#3039#3100#0" expanded="false" />
-            <element signature="e#3113#3260#0" expanded="false" />
-            <element signature="e#3290#3468#0" expanded="false" />
-            <element signature="e#3479#3705#0" expanded="false" />
-            <element signature="e#3724#3785#0" expanded="false" />
-            <element signature="e#3801#3979#0" expanded="false" />
-            <element signature="e#3991#4217#0" expanded="false" />
-            <element signature="e#4237#4298#0" expanded="false" />
+            <element signature="e#1588#1736#0" expanded="false" />
+            <element signature="e#1757#2014#0" expanded="false" />
+            <element signature="e#2092#2412#0" expanded="false" />
+            <element signature="e#2682#2741#0" expanded="false" />
+            <element signature="e#2816#2994#0" expanded="false" />
+            <element signature="e#3018#3244#0" expanded="false" />
+            <element signature="e#3276#3337#0" expanded="false" />
+            <element signature="e#3350#3497#0" expanded="false" />
+            <element signature="e#3527#3705#0" expanded="false" />
+            <element signature="e#3716#3942#0" expanded="false" />
+            <element signature="e#3961#4022#0" expanded="false" />
+            <element signature="e#4038#4216#0" expanded="false" />
+            <element signature="e#4228#4454#0" expanded="false" />
+            <element signature="e#4474#4535#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/sql/DriverManager.java">
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+        <state relative-caret-position="2115">
+          <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding>
+            <element signature="method#returnToHub#0;class#new_rental_controller#0" expanded="false" />
+            <element signature="method#submitOrder#0;class#new_rental_controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Navigation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="220">
+          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="35" selection-end-column="24" />
           <folding>
             <element signature="e#28#115#0" expanded="false" />
             <element signature="e#148#151#0" expanded="false" />
             <element signature="e#176#271#0" expanded="false" />
             <element signature="e#282#430#0" expanded="false" />
             <element signature="e#447#533#0" expanded="false" />
-            <element signature="e#546#694#0" expanded="false" />
-            <element signature="e#713#796#0" expanded="false" />
             <element signature="e#854#1059#0" expanded="false" />
             <element signature="e#1125#1399#0" expanded="false" />
             <element signature="e#1517#1546#0" expanded="false" />
@@ -711,14 +681,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="56" column="34" lean-forward="false" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="n#columnConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
             <element signature="n#rowConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
             <element signature="n#Label#0;n#GridPane#0;n#!!top" expanded="false" />
             <element signature="n#Button#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#GridPane#0;n#GridPane#0;n#!!top" expanded="false" />
             <element signature="n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
             <element signature="n#VBox#0;n#GridPane#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -729,8 +702,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="295" column="46" lean-forward="false" selection-start-line="295" selection-start-column="46" selection-end-line="295" selection-end-column="46" />
+        <state relative-caret-position="-750">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#832#838#0" expanded="true" />
@@ -741,8 +714,86 @@
             <element signature="method#handleFile#0;class#new_print_controller#0" expanded="false" />
             <element signature="method#removeFile#0;class#new_print_controller#0" expanded="false" />
             <element signature="method#submitOrder#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#createPrintQuery#0;class#new_print_controller#0" expanded="false" />
-            <marker date="1533535372046" expanded="true" signature="8158:8222" ph="INSERT INTO prints... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/rental_queue_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/rental_queue.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="61" column="15" lean-forward="false" selection-start-line="61" selection-start-column="15" selection-end-line="61" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/rental_queue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="82" lean-forward="false" selection-start-line="39" selection-start-column="82" selection-end-line="39" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/print_queue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="83" lean-forward="false" selection-start-line="39" selection-start-column="83" selection-end-line="39" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/print_queue_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/print_queue.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#kill#0;class#Database#0" expanded="false" />
+            <element signature="method#sendPrintQuery#0;class#Database#0" expanded="false" />
+            <element signature="method#sendRentalQuery#0;class#Database#0" expanded="false" />
+            <element signature="method#refreshPrintQueue#0;class#Database#0" expanded="false" />
+            <marker date="1533541311115" expanded="true" signature="1746:1795" ph="INSERT INTO prints... " />
+            <marker date="1533541311115" expanded="true" signature="1746:1842" ph="INSERT INTO prints... " />
+            <marker date="1533541311115" expanded="true" signature="3794:3883" ph="INSERT INTO rentals... " />
+            <marker date="1533541311115" expanded="true" signature="5538:5558" ph="SELECT * FRO... prints" />
           </folding>
         </state>
       </provider>

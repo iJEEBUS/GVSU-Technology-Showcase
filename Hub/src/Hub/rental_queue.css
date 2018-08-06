@@ -16,7 +16,7 @@
     -fx-alignment: center;
 }
 
-#back_btn{
+#back_btn, #refresh_queue_btn {
     -fx-text-fill: #c7c7c7;
     -fx-fill-width: true;
     -fx-fill-height: true;
@@ -28,4 +28,14 @@
     -fx-text-fill: ghostwhite;
     -fx-fill-height: true;
     -fx-font-size: 40pt;
+}
+
+#refresh_queue_btn:hover {
+    -fx-text-fill: #B3EFB2;
+    -fx-fill-height: true;
+    -fx-font-size: 40pt;
+}
+
+#rental_table {
+    -fx-background-color: linear-gradient(to top right, #1c1c1c, #414141, #1c1c1c);
 }

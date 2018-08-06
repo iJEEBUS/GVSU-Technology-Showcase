@@ -54,7 +54,7 @@
     </Button>
     <Button text="Submit"
             fx:id="submit_btn"
-            onAction="#insertPrintQuery"
+            onAction="#submitOrder"
             GridPane.halignment="RIGHT"
             GridPane.valignment="TOP"
             GridPane.columnIndex="5"

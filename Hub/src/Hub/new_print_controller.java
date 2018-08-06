@@ -58,27 +58,13 @@ public class new_print_controller {
     @FXML
     public TextField user_input_email;
 
-    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
-    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
-    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
-    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
     /**
      * Changes the root scene back to the main hub
      */
     public void returnToHub() {
-        try {
-            Stage stage = (Stage) new_print_pane.getScene().getWindow();
-            System.out.println();
-            stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("main_hub.fxml")));
-            stage.setFullScreen(true);
-        } catch (IOException io) {
-            io.printStackTrace();
-        }
+        Navigation nav = new Navigation();
+        nav.returnToHub(new_print_pane);
     }
-    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
-    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
-    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
-    /////////////// NEED TO MOVE THIS TO A NEW CLASS. NAVIGATION.JAVA ///////////////////
 
     /**
      * Calls on handleFile helper method to get file from user.
@@ -229,84 +215,22 @@ public class new_print_controller {
      * Returns to the main screen of the hub.
      */
     public void submitOrder() {
-        createPrintQuery();
-        temporary_file_queue.clear();
-        returnToHub();
-    }
+        String fname = user_input_first_name.getText();
+        String lname = user_input_last_name.getText();
+        String email = user_input_email.getText();
+        Boolean success;
 
-    /**
-     * Creates and sends a query to the database with all of the
-     * needed user inputs.
-     */
-    public void createPrintQuery() {
-        System.out.println("Generating query to submit....");
+        Database db = new Database();
+        db.connectToDatabase();
+        success = db.sendPrintQuery(fname, lname, email);
 
-        // make sure that all of the text boxes are filled
-        if (user_input_first_name != null
-                & user_input_last_name != null
-                & user_input_email != null) {
-
-            String query = "INSERT INTO prints (last_name, first_name, email) VALUES (?,?,?)";
-            System.out.println("Query skeleton created.");
-
-
-            // Connect to and send query to database
-            try {
-                System.out.println("Connecting to database....");
-                Connection myConn = connectToDatabase();
-
-                // Check if connection exists.
-                // If no, try to reconnect 5 times before quitting.
-                if (myConn != null) {
-                    System.out.println("Adding meat to query bones....");
-                    PreparedStatement final_statement = myConn.prepareStatement(query);
-                    final_statement.setString(1,user_input_last_name.getText());
-                    final_statement.setString(2, user_input_first_name.getText());
-                    final_statement.setString(3, user_input_email.getText());
-                    final_statement.execute();
-                    System.out.println("Query executed.");
-                    System.out.println("Killing connection to database...:(");
-                } else {
-                    for (int i = 0; i < 5; i++) {
-                        myConn = connectToDatabase();
-                        if (myConn != null) {
-                            throw new Exception("Database connection not stable. Check and try again.");
-                        }
-                    }
-                }
-            } catch (Exception e) {
-                System.out.println("Connection failed. Check connection and try again.");
-                e.printStackTrace();
-            }
+        if (success) {
+            temporary_file_queue.clear();
+            returnToHub();
+        } else {
+            System.out.println("Order not submitted. Please try again.");
         }
-
-        clearTemporaryQueue();
-        returnToHub();
-    }
-
-    /**
-     * Creates a connection to the local mySQL database.
-     * Used as a helper method for the createPrintQuery function.
-     */
-
-    private Connection connectToDatabase() {
-        try {
-            String url = "jdbc:mysql://localhost:3306/Tech_Showcase?autoReconnect=true&useSSL=false";
-            String user = "root";
-            String password = "*** *** *** ***";
-
-            // Create connection
-            Connection myConn = DriverManager.getConnection(url, user, password);
-            if (myConn != null) {
-                System.out.println("Connection success.");
-                return myConn;
-            } else {
-                System.out.println("Connection failed. Check connection and try again.");
-            }
-        } catch (Exception e) {
-            System.out.println("Connection failed. Check connection and try again.");
-            e.printStackTrace();
-        }
-        return null;
     }
 }
+
+

@@ -9,7 +9,7 @@
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
           fx:controller="Hub.time_clock_controller"
-          fx:id="time_clock"
+          fx:id="time_clock_pane"
           stylesheets="@time_clock.css">
 
 

@@ -10,20 +10,14 @@ import java.io.IOException;
 public class time_clock_controller {
 
     @FXML
-    public GridPane time_clock;
+    public GridPane time_clock_pane;
 
     /**
      * Changes the root scene back to the main hub
      */
     public void returnToHub() {
-        try {
-            Stage stage = (Stage) time_clock.getScene().getWindow();
-            System.out.println();
-            stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("main_hub.fxml")));
-            stage.setFullScreen(true);
-        } catch (IOException io) {
-            io.printStackTrace();
-        }
+        Navigation nav = new Navigation();
+        nav.returnToHub(time_clock_pane);
     }
 
     public void submitTime() {

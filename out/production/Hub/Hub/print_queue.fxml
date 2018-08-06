@@ -6,24 +6,32 @@
 <?import javafx.scene.layout.RowConstraints?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
           fx:controller="Hub.print_queue_controller"
-          fx:id="print_queue"
+          fx:id="print_queue_pane"
           stylesheets="@print_queue.css">
 
 
+    <!-- Entire Pane Layout -->
     <columnConstraints>
-        <ColumnConstraints percentWidth="33.33" />
-        <ColumnConstraints percentWidth="33.33" />
-        <ColumnConstraints percentWidth="33.33" />
+        <ColumnConstraints percentWidth="2.5" />    <!-- 0 -->
+        <ColumnConstraints percentWidth="23.5" />   <!-- 1 -->
+        <ColumnConstraints percentWidth="23.5" />   <!-- 2 -->
+        <ColumnConstraints percentWidth="2.5" />    <!-- 3 -->
+        <ColumnConstraints percentWidth="23.5" />   <!-- 4 -->
+        <ColumnConstraints percentWidth="23.5" />   <!-- 5 -->
+        <ColumnConstraints percentWidth="2.5" />    <!-- 6 -->
     </columnConstraints>
-
     <rowConstraints>
-        <RowConstraints percentHeight="25" />
-        <RowConstraints percentHeight="25" />
-        <RowConstraints percentHeight="25" />
-        <RowConstraints percentHeight="25" />
+        <RowConstraints percentHeight="24" />   <!-- 0 -->
+        <RowConstraints percentHeight="24" />   <!-- 1 -->
+        <RowConstraints percentHeight="24" />   <!-- 2 -->
+        <RowConstraints percentHeight="1.25" /> <!-- 3 -->
+        <RowConstraints percentHeight="24" />   <!-- 4 -->
+        <RowConstraints percentHeight="1.25" /> <!-- 5 -->
     </rowConstraints>
 
     <Label text="Print Queue"
@@ -32,7 +40,7 @@
            GridPane.valignment="TOP"
            GridPane.hgrow="ALWAYS"
            GridPane.columnIndex="0"
-           GridPane.columnSpan="3"
+           GridPane.columnSpan="7"
            GridPane.rowIndex="0" />
 
     <Button text="Return"
@@ -40,7 +48,30 @@
             onAction="#returnToHub"
             GridPane.halignment="LEFT"
             GridPane.valignment="TOP"
-            GridPane.columnIndex="0"
+            GridPane.columnIndex="1"
             GridPane.rowIndex="0" />
+
+    <Button text="Refresh"
+            fx:id="refresh_queue_btn"
+            onAction="#refreshPrintQueue"
+            GridPane.halignment="RIGHT"
+            GridPane.valignment="TOP"
+            GridPane.rowIndex="0"
+            GridPane.columnIndex="5" />
+
+    <TableView fx:id="print_queue_table"
+               GridPane.columnIndex="1"
+               GridPane.rowIndex="1"
+               GridPane.columnSpan="5"
+               GridPane.rowSpan="4">
+        <columns>
+            <TableColumn text="Last Name">
+            </TableColumn>
+            <TableColumn text="First Name">
+            </TableColumn>
+            <TableColumn text="email">
+            </TableColumn>
+        </columns>
+    </TableView>
 
 </GridPane>

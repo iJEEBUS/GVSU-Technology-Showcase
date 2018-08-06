@@ -135,19 +135,19 @@
 
         <!-- User Information -->
         <TextField promptText="First name"
-                   fx:id="user_input"
+                   fx:id="user_input_first_name"
                    GridPane.rowIndex="1"
                    GridPane.columnIndex="0"
                    GridPane.fillWidth="false" />
 
         <TextField promptText="Last name"
-                   fx:id="user_input"
+                   fx:id="user_input_last_name"
                    GridPane.rowIndex="1"
                    GridPane.columnIndex="1"
                    GridPane.fillWidth="false" />
 
         <TextField promptText="Email"
-                   fx:id="user_input"
+                   fx:id="user_input_email"
                    GridPane.halignment="CENTER"
                    GridPane.rowIndex="2"
                    GridPane.columnIndex="0"

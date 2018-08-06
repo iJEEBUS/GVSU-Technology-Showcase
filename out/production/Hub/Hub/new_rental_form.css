@@ -68,6 +68,7 @@
     -fx-background-color: #1c1c1c;
     -fx-font-size: 25pt;
 }
+
 /* Calendar */
 #return_date_lbl {
     -fx-text-fill: #c7c7c7;
@@ -86,7 +87,10 @@
     -fx-border-color: #1974bb;
     -fx-padding: 0px, 10px, 0px, 0px;
 }
-#user_input {
+#user_input,
+#user_input_first_name,
+#user_input_last_name,
+#user_input_email{
     -fx-background-color: transparent;
     -fx-font-size: 35pt;
     -fx-text-fill: ghostwhite;
@@ -99,11 +103,17 @@
     -fx-border-insets: 20,20,20,20;
     /*-fx-padding: 2 2 0 2;*/
 }
-#user_input:focused {
+#user_input:focused,
+#user_input_first_name:focused,
+#user_input_last_name:focused,
+user_input_email:focused{
     -fx-border-color: #3cc0f0;
     -fx-font-size: 40pt;
 }
-#user_input:hover {
+#user_input:hover,
+#user_input_first_name:hover,
+#user_input_last_name:hover,
+#user_input_email:hover{
     -fx-border-color: #3cc0f0;
     -fx-font-size: 40pt;
 }
