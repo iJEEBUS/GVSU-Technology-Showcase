@@ -14,7 +14,6 @@ public class Navigation {
     public void returnToHub(Pane current_pane) {
         try {
             Stage stage = (Stage) current_pane.getScene().getWindow();
-            System.out.println();
             stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("main_hub.fxml")));
             stage.setFullScreen(true);
         } catch (IOException io) {

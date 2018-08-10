@@ -8,12 +8,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
           fx:controller="Hub.print_queue_controller"
           fx:id="print_queue_pane"
           stylesheets="@print_queue.css">
-
 
     <!-- Entire Pane Layout -->
     <columnConstraints>
@@ -53,28 +54,36 @@
 
     <Button text="Refresh"
             fx:id="refresh_queue_btn"
-            onAction="#refreshPrintQueue"
+            onAction="#updateTable"
             GridPane.halignment="RIGHT"
             GridPane.valignment="TOP"
             GridPane.rowIndex="0"
             GridPane.columnIndex="5" />
+    <GridPane fx:id="print_table_parent_pane"
+              GridPane.columnIndex="1"
+              GridPane.rowIndex="1"
+              GridPane.columnSpan="5"
+              GridPane.rowSpan="4">
+        <AnchorPane fx:id="print_table_anchor">
+            <GridPane fx:id="print_table_pane" />
 
-    <TableView fx:id="print_queue_table"
-               GridPane.columnIndex="1"
-               GridPane.rowIndex="1"
-               GridPane.columnSpan="5"
-               GridPane.rowSpan="4">
-        <columns>
-            <TableColumn fx:id="last_name_column"
-                         text="Last Name">
-            </TableColumn>
-            <TableColumn fx:id="first_name_column"
-                         text="First Name">
-            </TableColumn>
-            <TableColumn fx:id="email_column"
-                         text="email">
-            </TableColumn>
-        </columns>
-    </TableView>
+        </AnchorPane>
+    </GridPane>
 
+
+
+    <!--<TableView fx:id="print_queue_table"-->
+               <!--GridPane.columnIndex="1"-->
+               <!--GridPane.rowIndex="1"-->
+               <!--GridPane.columnSpan="5"-->
+               <!--GridPane.rowSpan="4">-->
+        <!--<columns>-->
+            <!--<TableColumn fx:id="last_name_column"-->
+                         <!--text="Last Name" />-->
+            <!--<TableColumn fx:id="first_name_column"-->
+                         <!--text="First Name" />-->
+            <!--<TableColumn fx:id="email_column"-->
+                         <!--text="email" />-->
+        <!--</columns>-->
+    <!--</TableView>-->
 </GridPane>

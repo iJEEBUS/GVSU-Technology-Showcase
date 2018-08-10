@@ -142,13 +142,11 @@
     -fx-text-fill: ghostwhite;
     -fx-font-size: 25px;
 }
-
 #file_loaded_btn {
     -fx-background-color: transparent;
     -fx-text-fill: #B3EFB2;
     -fx-font-size: 25px;
 }
-
 #file_loaded_btn:hover {
     -fx-text-fill: red;
 }
