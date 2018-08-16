@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a05ed9ce-81b4-4ba8-81fe-aec5d00f00fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/rentalQueueOrder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Hub/src/Hub/Resources/terms_and_conditions.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/Shallots.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/CSS/Shallots.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/main_hub.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/FXML/main_hub.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_print.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/CSS/new_print.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_print.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_print_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/new_rental_form.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/CSS/new_rental_form.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/printQueueOrder.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/printQueueOrder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/print_queue.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/CSS/print_queue.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/print_queue.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/FXML/print_queue.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/print_queue_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/rental_queue.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/CSS/rental_queue.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/rental_queue.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/FXML/rental_queue.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/rental_queue_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/rental_queue_controller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/time_clock.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/CSS/time_clock.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/time_clock.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/FXML/time_clock.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Hub/src/Hub/time_clock_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/time_clock_controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/new_print.fxml" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/new_print.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/new_rental.fxml" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/new_rental.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/print_queue.fxml" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/print_queue.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/rental_queue.fxml" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/rental_queue.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/out/production/Hub/time_clock.fxml" afterPath="$PROJECT_DIR$/Hub/out/production/Hub/time_clock.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Database.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Database.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Main.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Navigation.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Navigation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/rental_queue_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/rental_queue_controller.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -129,16 +100,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rental_queue_controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rental_queue_controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/rental_queue_controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="44" />
               <folding>
                 <element signature="method#initialize#0;class#rental_queue_controller#0" expanded="false" />
                 <element signature="method#returnToHub#0;class#rental_queue_controller#0" expanded="false" />
                 <element signature="method#getRentalQueueOrder#0;class#rental_queue_controller#0" expanded="false" />
                 <element signature="method#updateTable#0;class#rental_queue_controller#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="print_queue_controller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -225,7 +208,6 @@
         <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/time_clock_controller.java" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/print_queue.fxml" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/CSS/print_queue.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/rental_queue.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/rentalQueueOrder.java" />
@@ -235,6 +217,7 @@
         <option value="$PROJECT_DIR$/Hub/src/Hub/Resources/terms_and_conditions.txt" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/rental_queue_controller.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java" />
       </list>
     </option>
   </component>
@@ -476,12 +459,12 @@
       <workItem from="1533577239207" duration="607000" />
       <workItem from="1533663604612" duration="1162000" />
       <workItem from="1533840333765" duration="37587000" />
-      <workItem from="1534431003721" duration="11852000" />
+      <workItem from="1534431003721" duration="12374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132309000" />
+    <option name="totallyTimeSpent" value="132831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1067" y="22" width="981" height="1258" extended-state="0" />
@@ -968,16 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="107" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/rentalQueueOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1080,13 +1053,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/rental_queue_controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="44" />
           <folding>
             <element signature="method#initialize#0;class#rental_queue_controller#0" expanded="false" />
             <element signature="method#returnToHub#0;class#rental_queue_controller#0" expanded="false" />
             <element signature="method#getRentalQueueOrder#0;class#rental_queue_controller#0" expanded="false" />
             <element signature="method#updateTable#0;class#rental_queue_controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

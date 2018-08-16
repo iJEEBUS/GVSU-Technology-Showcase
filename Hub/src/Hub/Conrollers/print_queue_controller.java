@@ -17,12 +17,21 @@ public class print_queue_controller {
 
     @FXML
     public GridPane print_queue_pane, print_table_parent_pane;
-
     @FXML
     TableView<printQueueOrder> print_queue_table;
-
     @FXML
     TableColumn<printQueueOrder, String> last_name_col, first_name_col, email_col;
+
+    /**
+     * Code to execute when scene is loaded.
+     */
+    public void initialize() {
+        try {
+            updateTable();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     /**
      * Changes the root scene back to the main hub
@@ -31,11 +40,6 @@ public class print_queue_controller {
         Navigation nav = new Navigation();
         nav.returnToHub(print_queue_pane);
     }
-
-
-
-
-
 
     /**
      * Queries the database and returns an obser
@@ -66,12 +70,6 @@ public class print_queue_controller {
 
         return print_queue;
     }
-
-
-
-
-
-
 
     public void updateTable() throws SQLException {
 

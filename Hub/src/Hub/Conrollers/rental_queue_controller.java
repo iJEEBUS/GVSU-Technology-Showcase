@@ -13,13 +13,12 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- *
+ * The logic behind all of the actions that have to do with the rental queue panel.
  */
 public class rental_queue_controller {
 
     @FXML
     public GridPane rental_queue;
-
     @FXML
     TableView rental_queue_table;
     @FXML
