@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -20,7 +19,7 @@ public class Main extends Application {
 
 
         // Main hub scene
-        FXMLLoader main_hub_loader = new FXMLLoader(getClass().getResource("main_hub.fxml"));
+        FXMLLoader main_hub_loader = new FXMLLoader(getClass().getResource("FXML/main_hub.fxml"));
         Parent main_hub_pane = main_hub_loader.load();
         Scene main_hub_scene = new Scene(main_hub_pane, 500,500);
 

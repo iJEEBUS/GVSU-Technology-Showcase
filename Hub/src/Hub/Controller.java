@@ -49,7 +49,7 @@ public class Controller {
     public void showPrintQueue() {
         try {
             Stage stage = (Stage) main_hub.getScene().getWindow();
-            stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("print_queue.fxml")));
+            stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("FXML/print_queue.fxml")));
             stage.setFullScreen(true);
         } catch (IOException io) {
             io.printStackTrace();
@@ -63,7 +63,7 @@ public class Controller {
     public void showNewPrint() {
         try {
             Stage stage = (Stage) main_hub.getScene().getWindow();
-            stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("new_print.fxml")));
+            stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("FXML/new_print.fxml")));
             stage.setFullScreen(true);
         } catch (IOException io) {
             io.printStackTrace();
@@ -77,7 +77,7 @@ public class Controller {
     public void showRentalQueue() {
         try {
             Stage stage = (Stage) main_hub.getScene().getWindow();
-            stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("rental_queue.fxml")));
+            stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("FXML/rental_queue.fxml")));
             stage.setFullScreen(true);
         } catch (IOException io) {
             io.printStackTrace();
@@ -91,7 +91,7 @@ public class Controller {
     public void showNewRental() {
         try {
             Stage stage = (Stage) main_hub.getScene().getWindow();
-            stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("new_rental.fxml")));
+            stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("FXML/new_rental.fxml")));
             stage.setFullScreen(true);
         } catch (IOException io) {
             io.printStackTrace();
@@ -105,7 +105,7 @@ public class Controller {
     public void showTimeClock() {
         try {
             Stage stage = (Stage) main_hub.getScene().getWindow();
-            stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("time_clock.fxml")));
+            stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("FXML/time_clock.fxml")));
             stage.setFullScreen(true);
         } catch (IOException io) {
             io.printStackTrace();

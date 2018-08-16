@@ -9,7 +9,7 @@
 
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
-          fx:controller="Hub.new_print_controller"
+          fx:controller="Hub.Conrollers.new_print_controller"
           fx:id="new_print"
           stylesheets="@new_print.css">
 

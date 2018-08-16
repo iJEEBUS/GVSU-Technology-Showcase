@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+
+
+<?import javafx.scene.control.TableColumn?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/8.0.121"
+          fx:controller="Hub.Conrollers.print_queue_controller"
+          fx:id="print_queue_pane"
+          stylesheets="@../CSS/print_queue.css">
+
+    <!-- Entire Pane Layout -->
+    <columnConstraints>
+        <ColumnConstraints percentWidth="2.5" />    <!-- 0 -->
+        <ColumnConstraints percentWidth="23.5" />   <!-- 1 -->
+        <ColumnConstraints percentWidth="23.5" />   <!-- 2 -->
+        <ColumnConstraints percentWidth="2.5" />    <!-- 3 -->
+        <ColumnConstraints percentWidth="23.5" />   <!-- 4 -->
+        <ColumnConstraints percentWidth="23.5" />   <!-- 5 -->
+        <ColumnConstraints percentWidth="2.5" />    <!-- 6 -->
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="24" />   <!-- 0 -->
+        <RowConstraints percentHeight="24" />   <!-- 1 -->
+        <RowConstraints percentHeight="24" />   <!-- 2 -->
+        <RowConstraints percentHeight="1.25" /> <!-- 3 -->
+        <RowConstraints percentHeight="24" />   <!-- 4 -->
+        <RowConstraints percentHeight="1.25" /> <!-- 5 -->
+    </rowConstraints>
+
+    <Label text="Print Queue"
+           fx:id="title_lbl"
+           GridPane.halignment="CENTER"
+           GridPane.valignment="TOP"
+           GridPane.hgrow="ALWAYS"
+           GridPane.columnIndex="0"
+           GridPane.columnSpan="7"
+           GridPane.rowIndex="0" />
+
+    <Button text="Return"
+            fx:id="back_btn"
+            onAction="#returnToHub"
+            GridPane.halignment="LEFT"
+            GridPane.valignment="TOP"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="0" />
+
+    <Button text="Refresh"
+            fx:id="refresh_queue_btn"
+            onAction="#updateTable"
+            GridPane.halignment="RIGHT"
+            GridPane.valignment="TOP"
+            GridPane.rowIndex="0"
+            GridPane.columnIndex="5" />
+    <GridPane fx:id="print_table_parent_pane"
+              GridPane.columnIndex="1"
+              GridPane.rowIndex="1"
+              GridPane.columnSpan="5"
+              GridPane.rowSpan="4">
+        <TableView fx:id="print_queue_table"
+                   GridPane.columnIndex="0"
+                   GridPane.columnSpan="1"
+                   GridPane.vgrow="ALWAYS"
+                   GridPane.hgrow="ALWAYS"
+                   GridPane.rowIndex="0">
+            <columns>
+                <TableColumn fx:id="last_name_col"
+                             text="Last Name" />
+                <TableColumn fx:id="first_name_col"
+                             text="First Name" />
+                <TableColumn fx:id="email_col"
+                             text="Email" />
+            </columns>
+        </TableView>
+
+
+    </GridPane>
+</GridPane>

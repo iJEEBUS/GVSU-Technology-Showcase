@@ -8,7 +8,7 @@
 <?import javafx.scene.control.Label?>
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
-          fx:controller="Hub.print_queue_controller"
+          fx:controller="Hub.Conrollers.print_queue_controller"
           fx:id="print_queue"
           stylesheets="@print_queue.css">
 

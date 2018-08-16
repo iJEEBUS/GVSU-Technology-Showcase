@@ -1,0 +1,38 @@
+.root {
+    -fx-background-color: linear-gradient(to top right, #1c1c1c, #414141, #1c1c1c);
+}
+
+#title_lbl {
+    -fx-font-family: "Avenir", serif;
+    -fx-font-size: 110pt;
+    -fx-text-fill: #1974bb;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-font-size: 40pt;
+    -fx-text-fill: ghostwhite;
+    -fx-padding: 5px;
+    -fx-alignment: center;
+}
+
+#back_btn, #refresh_queue_btn {
+    -fx-text-fill: #c7c7c7;
+    -fx-fill-width: true;
+    -fx-fill-height: true;
+    -fx-background-color: transparent;
+    -fx-font-size: 35pt;
+}
+
+#back_btn:hover {
+    -fx-text-fill: ghostwhite;
+    -fx-fill-height: true;
+    -fx-font-size: 40pt;
+}
+
+#refresh_queue_btn:hover {
+    -fx-text-fill: #B3EFB2;
+    -fx-fill-height: true;
+    -fx-font-size: 40pt;
+}
+
