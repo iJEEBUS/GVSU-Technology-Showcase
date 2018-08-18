@@ -216,18 +216,14 @@
           GridPane.halignment="CENTER"
           GridPane.valignment="CENTER"
           GridPane.columnSpan="2">
-
         <Label text="Terms and Conditions"
                fx:id="terms_and_conditions_lbl" />
         <HBox>
             <Label text=""
                    fx:id="terms_and_conditions_text" />
-            <Group fx:id="signature">
-                <HBox>
-                    <RadioButton fx:id="signature_agree"
-                                 text="I have read and agree to the terms and conditions." />
-                </HBox>
-            </Group>
+                    <Button fx:id="signature_agree"
+                            text="I have read and agree to the terms and conditions."
+                            onAction="#handleTermsAndConditions"/>
         </HBox>
     </VBox>
 </GridPane>

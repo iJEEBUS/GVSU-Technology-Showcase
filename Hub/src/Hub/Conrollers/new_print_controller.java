@@ -29,7 +29,9 @@ public class new_print_controller {
             upload_btn_2,
             upload_btn_3,
             upload_btn_4,
-            upload_class_file_btn;
+            upload_class_file_btn,
+            submit_btn,
+            signature_agree;
     @FXML
     public ToggleButton
             class_agree,
@@ -50,6 +52,7 @@ public class new_print_controller {
     private Boolean upload_btn_3_filled = Boolean.FALSE;
     private Boolean upload_btn_4_filled = Boolean.FALSE;
     private Boolean class_file_btn_filled = Boolean.FALSE;
+    private Boolean AGREED_TO_TERMS = Boolean.FALSE;
 
     /**
      * Code that executes when the pane is loaded.
@@ -58,10 +61,26 @@ public class new_print_controller {
         String terms_and_conditions = getTermsAndConditions();
         terms_and_conditions_text.setText(terms_and_conditions);
         disableClassPane();
+        submit_btn.setDisable(true);
     }
 
     /**
-     * Used to disable the inputs in the class pane.
+     * Allow the user to submit their print.
+     * * */
+    public void handleTermsAndConditions() {
+        if (AGREED_TO_TERMS == Boolean.FALSE) {
+            AGREED_TO_TERMS = Boolean.TRUE;
+            submit_btn.setDisable(false);
+            signature_agree.setId("signature_agree_active");
+        } else {
+            AGREED_TO_TERMS = Boolean.FALSE;
+            submit_btn.setDisable(true);
+            signature_agree.setId("signature_agree");
+        }
+    }
+
+    /**
+     * Used to disable the inputs and set the styles in the class pane.
      * Active when the "No" button is toggled.
      */
     public void disableClassPane() {
@@ -73,7 +92,7 @@ public class new_print_controller {
     }
 
     /**
-     * Used to enable the inputs in the class pane.
+     * Used to enable the inputs and set the styles in the class pane.
      * Active when the "Yes" button is toggled.
      */
     public void enableClassPane() {
@@ -316,5 +335,3 @@ public class new_print_controller {
         }
     }
 }
-
-

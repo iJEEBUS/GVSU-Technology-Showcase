@@ -6,7 +6,7 @@ No one is permitted to use the 3D printers to create material that is:
 4) In violation of another person's intellectual property rights.
 
 All students, staff, and faculty must provide a valid GVSU ID in order to submit a 3D print.
-Every order is limited to 5-like files.
+Every order is limited to 4-like files.
 Class prints require 3 business days for completion and electronic proof of the assignment.
 
 The Technology Showcase reserves the right to refuse any 3D print request.

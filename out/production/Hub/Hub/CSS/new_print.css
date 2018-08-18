@@ -48,6 +48,7 @@
     -fx-border-radius: 25px;
     -fx-padding: 10px;
 }
+
 #user_input,
 #user_input_first_name,
 #user_input_last_name,
@@ -64,6 +65,7 @@
     -fx-border-insets: 20,20,20,20;
     /*-fx-padding: 2 2 0 2;*/
 }
+
 #user_input:focused,
 #user_input_first_name:focused,
 #user_input_last_name:focused,
@@ -71,6 +73,7 @@ user_input_email:focused{
     -fx-border-color: #3cc0f0;
     -fx-font-size: 40pt;
 }
+
 #user_input:hover,
 #user_input_first_name:hover,
 #user_input_last_name:hover,
@@ -117,6 +120,7 @@ user_input_email:focused{
     -fx-font-family: 'Avenir', sans-serif;
     -fx-text-fill: red;
 }
+
 #class_name_input {
     -fx-background-color: transparent;
     -fx-font-size: 30pt;
@@ -142,6 +146,7 @@ user_input_email:focused{
     -fx-font-size: 35pt;
 
 }
+
 #upload_class_file_btn {
     -fx-background-color: transparent;
     -fx-text-fill: #c7c7c7;
@@ -153,6 +158,7 @@ user_input_email:focused{
     -fx-text-fill: ghostwhite;
     -fx-font-size: 25px;
 }
+
 #for_class_lbl {
     -fx-background-color: transparent;
     -fx-text-fill: #c7c7c7;
@@ -179,6 +185,8 @@ user_input_email:focused{
     -fx-background-color: transparent;
     -fx-text-fill: #c7c7c7;
     -fx-font-size: 20px;
+    -fx-max-height: infinity;
+    -fx-max-width: infinity;
 }
 
 #upload_btn_1:hover,
@@ -216,6 +224,20 @@ user_input_email:focused{
     -fx-padding: 10,10,10,10;
 }
 #signature_agree {
-    -fx-text-fill: #c7c7c7;
+    -fx-background-color: transparent;
+    -fx-text-fill: red;
     -fx-font-size: 11pt;
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+}
+#signature_agree:hover {
+    -fx-text-fill: #B3EFB2;
+}
+#signature_agree_active {
+    -fx-background-color: transparent;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #B3EFB2;
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+
 }
