@@ -24,17 +24,31 @@
     -fx-font-size: 65pt;
 }
 
+#print_queue_btn {
+    /*-fx-graphic: url("../Icons/Custom/cloud.png");*/
+}
+
+#rental_queue_btn {
+    /*-fx-graphic: url("../Icons/Custom/cloud.png");*/
+}
+
+#new_print_btn {
+    /*-fx-graphic: url("../Icons/Custom/world.png");*/
+}
+
+#new_rental_btn {
+    /*-fx-graphic: url("../Icons/Custom/laptop.png");*/
+}
+
 #time_clock_btn {
     -fx-text-fill: #c7c7c7;
     -fx-fill-width: true;
     -fx-fill-height: true;
-    -fx-background-color: transparent;
+    /*-fx-background-color: transparent;*/
     -fx-font-size: 30pt;
 }
 
 #time_clock_btn:hover {
-    /*-fx-background-color: #1974bb;*/
-    /*-fx-text-fill: #1c1c1c;*/
     -fx-font-size: 40pt;
 }
 

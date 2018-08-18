@@ -10,6 +10,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Path;
@@ -59,7 +60,7 @@ public class new_rental_controller {
      */
     private String getTermsAndConditions() {
 
-        String file_location = "../Resources/terms_and_conditions.txt";
+        String file_location = "/Users/user/Desktop/Programming/GitHub/GVSU-Technology-Showcase/Hub/src/Hub/terms_and_conditions.txt";
 
         String terms_and_conditions = "";
 
@@ -67,10 +68,17 @@ public class new_rental_controller {
             FileReader fileReader = new FileReader(file_location);
 
             BufferedReader bufferedReader = new BufferedReader(fileReader);
+            StringBuffer stringBuffer = new StringBuffer();
+            String line;
 
-            while (bufferedReader.readLine() != null) {
-                terms_and_conditions += bufferedReader.readLine();
+            while ((line = bufferedReader.readLine()) != null) {
+                stringBuffer.append(line);
+                stringBuffer.append("\n");
             }
+
+            terms_and_conditions = stringBuffer.toString();
+
+            fileReader.close();
             bufferedReader.close();
         } catch (Exception e) {
             e.printStackTrace();

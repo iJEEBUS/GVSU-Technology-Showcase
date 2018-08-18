@@ -26,6 +26,8 @@ public class print_queue_controller {
      * Code to execute when scene is loaded.
      */
     public void initialize() {
+
+        // Try to display the table at load time
         try {
             updateTable();
         } catch (Exception e) {
@@ -47,7 +49,7 @@ public class print_queue_controller {
      * @return ObservableList - the print queue data
      * @throws SQLException
      */
-    public ObservableList<printQueueOrder> getPrintQueueOrder() throws SQLException {
+    private ObservableList<printQueueOrder> getPrintQueueOrder() throws SQLException {
 
         // List of queue objects to be displayed
         ObservableList<printQueueOrder> print_queue = FXCollections.observableArrayList();

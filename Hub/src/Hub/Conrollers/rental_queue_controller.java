@@ -32,6 +32,8 @@ public class rental_queue_controller {
      * Code to execute when scene is loaded.
      */
     public void initialize() {
+
+        // Try to display the table at load time
         try {
             updateTable();
         } catch (SQLException e) {

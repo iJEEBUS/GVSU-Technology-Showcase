@@ -48,35 +48,37 @@
     -fx-border-radius: 25px;
     -fx-padding: 10px;
 }
+#user_input,
 #user_input_first_name,
 #user_input_last_name,
-#user_input_email {
+#user_input_email{
     -fx-background-color: transparent;
     -fx-font-size: 35pt;
     -fx-text-fill: ghostwhite;
     -fx-padding: 5px;
     -fx-alignment: center;
 
-    -fx-border-width: 0 0 1 0;
-    -fx-border-bottom: 1px;
-    -fx-border-color: #1974bb;
+    -fx-border-width: 0.5 0.5 0.5 0.5;
+    /*-fx-border-bottom: 2px;*/
+    -fx-border-color: transparent;
     -fx-border-insets: 20,20,20,20;
+    /*-fx-padding: 2 2 0 2;*/
 }
-
+#user_input:focused,
 #user_input_first_name:focused,
 #user_input_last_name:focused,
-#user_input_email:focused,
-#class_name_input:focused {
-
+user_input_email:focused{
+    -fx-border-color: #3cc0f0;
+    -fx-font-size: 40pt;
+}
+#user_input:hover,
+#user_input_first_name:hover,
+#user_input_last_name:hover,
+#user_input_email:hover{
+    -fx-border-color: #3cc0f0;
     -fx-font-size: 40pt;
 }
 
-#user_input_first_name:focused,
-#user_input_last_name:focused,
-#user_input_email:focused,
-#class_name_input:hover {
-    -fx-font-size: 40pt;
-}
 /* Bottom Left Pane (Class Information) */
 #class_info {
     -fx-background-color: transparent;
@@ -84,28 +86,72 @@
     -fx-border-color: #3cc0f0;
     -fx-border-radius: 25;
 }
-#yes_btn, #no_btn {
+#class_agree {
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
     -fx-background-color: transparent;
-    -fx-text-fill: #c7c7c7;
-    -fx-font-size: 20px;
+    -fx-font-size: 250%;
+    -fx-font-family: 'Avenir', sans-serif;
+    -fx-text-fill: ghostwhite;
 }
-#yes_btn:hover {
+#class_agree:hover {
     -fx-text-fill: #B3EFB2;
-    -fx-fill-height: true;
-    -fx-font-size: 40pt;
 }
-#yes_btn:focused {
-    -fx-text-fill: #B3EFB2;
-    -fx-fill-height: true;
-    -fx-font-size: 40pt;
+
+#class_disagree {
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+    -fx-background-color: transparent;
+    -fx-font-size: 250%;
+    -fx-font-family: 'Avenir', sans-serif;
+    -fx-text-fill: dimgrey;
+}
+#class_disagree:hover {
+    -fx-text-fill: red;
+}
+#class_disagree_active {
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+    -fx-background-color: transparent;
+    -fx-font-size: 250%;
+    -fx-font-family: 'Avenir', sans-serif;
+    -fx-text-fill: red;
 }
 #class_name_input {
+    -fx-background-color: transparent;
+    -fx-font-size: 30pt;
+    -fx-text-fill: ghostwhite;
+    -fx-padding: 5px;
+    -fx-alignment: center;
+
+    -fx-border-width: 0.5 0.5 0.5 0.5;
+    -fx-border-color: transparent;
+    -fx-border-insets: 20,20,20,20;
+
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+
+}
+#class_name_input:focused {
+    -fx-border-color: #3cc0f0;
+    -fx-font-size: 35pt;
+
+}
+#class_name_input:hover {
+    -fx-border-color: #3cc0f0;
+    -fx-font-size: 35pt;
 
 }
 #upload_class_file_btn {
     -fx-background-color: transparent;
     -fx-text-fill: #c7c7c7;
     -fx-font-size: 20px;
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+}
+#upload_class_file_btn:hover {
+    -fx-text-fill: ghostwhite;
+    -fx-font-size: 25px;
 }
 #for_class_lbl {
     -fx-background-color: transparent;
@@ -142,6 +188,7 @@
     -fx-text-fill: ghostwhite;
     -fx-font-size: 25px;
 }
+
 #file_loaded_btn {
     -fx-background-color: transparent;
     -fx-text-fill: #B3EFB2;
@@ -151,11 +198,8 @@
     -fx-text-fill: red;
 }
 
-/* Signature */
-#signature_box {
-    -fx-pref-height: 50%;
-}
-#signature_lbl {
+/* Terms and Conditions */
+#terms_and_conditions_lbl {
     -fx-text-fill: #c7c7c7;
     -fx-fill-width: true;
     -fx-fill-height: true;
@@ -163,16 +207,15 @@
     -fx-font-size: 25pt;
     -fx-padding: 10,10,10,10;
 }
-#signature {
-    -fx-control-inner-background: #c7c7c7;
-    -fx-highlight-fill: #3cc0f0;
-    -fx-highlight-text-fill: #1c1c1c;
-    -fx-text-fill: #1c1c1c;
-    -fx-font-size: 25pt;
-    -fx-border-width: 5px;
-    -fx-border-color: white;
+#terms_and_conditions_text {
+    -fx-text-fill: #c7c7c7;
+    -fx-fill-width: true;
+    -fx-fill-height: true;
+    -fx-background-color: transparent;
+    -fx-font-size: 8pt;
+    -fx-padding: 10,10,10,10;
 }
-#signature:focused {
-    -fx-border-width: 5px;
-    -fx-border-color: #3cc0f0;
+#signature_agree {
+    -fx-text-fill: #c7c7c7;
+    -fx-font-size: 11pt;
 }

@@ -3,6 +3,7 @@
     -fx-background-color: linear-gradient(to top right, #1c1c1c, #414141, #1c1c1c);
 }
 
+
 /* Header */
 #title_lbl {
     -fx-font-family: "Avenir", serif;
@@ -148,6 +149,7 @@ user_input_email:focused{
     -fx-padding: 5px;
     -fx-alignment: center;
 }
+
 /* Comments */
 #comments_lbl {
     -fx-text-fill: #c7c7c7;
@@ -170,6 +172,8 @@ user_input_email:focused{
     -fx-border-width: 5px;
     -fx-border-color: #3cc0f0;
 }
+
+/* Terms and Conditions */
 #terms_and_conditions_lbl {
     -fx-text-fill: #c7c7c7;
     -fx-fill-width: true;
@@ -178,23 +182,15 @@ user_input_email:focused{
     -fx-font-size: 25pt;
     -fx-padding: 10,10,10,10;
 }
-
 #terms_and_conditions_text {
     -fx-text-fill: #c7c7c7;
     -fx-fill-width: true;
     -fx-fill-height: true;
     -fx-background-color: transparent;
-    -fx-font-size: 15pt;
+    -fx-font-size: 8pt;
     -fx-padding: 10,10,10,10;
-
 }
-
-#signature {
-    -fx-control-inner-background: #c7c7c7;
-    -fx-highlight-fill: #3cc0f0;
-    -fx-highlight-text-fill: #1c1c1c;
-    -fx-text-fill: #1c1c1c;
-    -fx-font-size: 18pt;
-    -fx-border-width: 5px;
-    -fx-border-color: white;
+#signature_agree {
+    -fx-text-fill: #c7c7c7;
+    -fx-font-size: 11pt;
 }

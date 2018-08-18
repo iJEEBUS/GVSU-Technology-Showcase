@@ -6,10 +6,12 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.ToggleButton?>
-
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.RadioButton?>
 
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
@@ -132,21 +134,18 @@
                 GridPane.rowIndex="0"
                 GridPane.columnIndex="0"
                 GridPane.halignment="CENTER" />
-
         <Button text="Upload"
                 fx:id="upload_btn_2"
                 onAction="#getSecondFile"
                 GridPane.rowIndex="0"
                 GridPane.columnIndex="1"
                 GridPane.halignment="CENTER" />
-
         <Button text="Upload"
                 fx:id="upload_btn_3"
                 onAction="#getThirdFile"
                 GridPane.rowIndex="1"
                 GridPane.columnIndex="0"
                 GridPane.halignment="CENTER" />
-
         <Button text="Upload"
                 fx:id="upload_btn_4"
                 onAction="#getFourthFile"
@@ -167,65 +166,68 @@
         </columnConstraints>
 
         <rowConstraints>
-            <RowConstraints percentHeight="10" />
-            <RowConstraints percentHeight="45" />
-            <RowConstraints percentHeight="45" />
+            <RowConstraints percentHeight="50" />
+            <RowConstraints percentHeight="50" />
         </rowConstraints>
 
-            <Label fx:id="for_class_lbl"
-                   text="For a class?"
-                   GridPane.rowIndex="0"
-                   GridPane.columnIndex="0"
-                   GridPane.fillWidth="True"
-                   GridPane.fillHeight="True"
-                   GridPane.halignment="CENTER" />
+        <fx:define>
+            <ToggleGroup fx:id="for_class_btns"/>
+        </fx:define>
 
-            <ToggleButton fx:id="yes_btn"
-                          text="Yes"
-                          toggleGroup="$for_class_toggle"
-                          GridPane.rowIndex="1"
-                          GridPane.columnIndex="0"
-                          GridPane.fillWidth="True"
-                          GridPane.fillHeight="True"
-                          GridPane.halignment="CENTER" />
+        <ToggleButton fx:id="class_agree"
+                      text="Yes, this is for a class."
+                      toggleGroup="$for_class_btns"
+                      selected="false"
+                      onAction="#enableClassPane"
+                      GridPane.rowIndex="0"
+                      GridPane.columnIndex="0"
+                      GridPane.fillHeight="true"
+                      GridPane.fillWidth="true"
+        />
+        <ToggleButton fx:id="class_disagree"
+                      text="No, this is not for a class."
+                      toggleGroup="$for_class_btns"
+                      selected="true"
+                      onAction="#disableClassPane"
+                      GridPane.rowIndex="1"
+                      GridPane.columnIndex="0"
+                      GridPane.fillHeight="true"
+                      GridPane.fillWidth="true"
+        />
 
-            <ToggleButton fx:id="no_btn"
-                          text="No"
-                          toggleGroup="$for_class_toggle"
-                          GridPane.rowIndex="2"
-                          GridPane.columnIndex="0"
-                          GridPane.fillWidth="True"
-                          GridPane.fillHeight="True"
-                          GridPane.halignment="CENTER" />
 
         <!-- Right side of bottom left pane -->
-            <TextField promptText="Class"
-                       fx:id="class_name_input"
-                       GridPane.rowIndex="1"
-                       GridPane.columnIndex="1"
-                       GridPane.halignment="CENTER"
-                       GridPane.fillHeight="True"
-                       GridPane.fillWidth="True"/>
-            <Button text="Upload"
-                    fx:id="upload_class_file_btn"
-                    GridPane.rowIndex="2"
-                    GridPane.columnIndex="1"
-                    GridPane.halignment="CENTER"
-                    GridPane.fillHeight="True"
-                    GridPane.fillWidth="True" />
+        <TextField promptText="Class Name"
+                   fx:id="class_name_input"
+                   GridPane.rowIndex="0"
+                   GridPane.columnIndex="1"/>
+        <Button text="Upload"
+                fx:id="upload_class_file_btn"
+                onAction="#getClassfile"
+                GridPane.rowIndex="1"
+                GridPane.columnIndex="1"
+
+        />
     </GridPane>
-    <!-- Signature -->
-    <VBox fx:id="signature_box"
-          GridPane.rowIndex="4"
+
+    <!-- Terms and Conditions -->
+    <VBox GridPane.rowIndex="4"
           GridPane.columnIndex="4"
           GridPane.halignment="CENTER"
           GridPane.valignment="CENTER"
           GridPane.columnSpan="2">
 
-        <Label text="Signature"
-               fx:id="signature_lbl"
-               GridPane.fillHeight="True" />
-
-        <TextArea fx:id="signature" />
+        <Label text="Terms and Conditions"
+               fx:id="terms_and_conditions_lbl" />
+        <HBox>
+            <Label text=""
+                   fx:id="terms_and_conditions_text" />
+            <Group fx:id="signature">
+                <HBox>
+                    <RadioButton fx:id="signature_agree"
+                                 text="I have read and agree to the terms and conditions." />
+                </HBox>
+            </Group>
+        </HBox>
     </VBox>
 </GridPane>
