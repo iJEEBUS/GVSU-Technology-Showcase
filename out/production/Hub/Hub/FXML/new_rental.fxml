@@ -12,10 +12,8 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.DatePicker?>
-
-<?import javafx.scene.Group?>
-<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.layout.HBox?>
+
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
           fx:controller="Hub.Conrollers.new_rental_controller"
@@ -205,12 +203,9 @@
         <HBox>
             <Label text=""
                    fx:id="terms_and_conditions_text" />
-            <Group fx:id="signature">
-                <HBox>
-                    <RadioButton fx:id="signature_agree"
-                                 text="I have read and agree to the terms and conditions." />
-                </HBox>
-            </Group>
+                    <Button fx:id="signature_agree"
+                            text="I have read and agree to the terms and conditions."
+                            onAction="#handleTermsAndConditions" />
         </HBox>
     </VBox>
 

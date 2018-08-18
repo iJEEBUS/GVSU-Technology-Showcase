@@ -191,6 +191,20 @@ user_input_email:focused{
     -fx-padding: 10,10,10,10;
 }
 #signature_agree {
-    -fx-text-fill: #c7c7c7;
+    -fx-background-color: transparent;
+    -fx-text-fill: red;
     -fx-font-size: 11pt;
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+}
+#signature_agree:hover {
+    -fx-text-fill: #B3EFB2;
+}
+#signature_agree_active {
+    -fx-background-color: transparent;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #B3EFB2;
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+
 }

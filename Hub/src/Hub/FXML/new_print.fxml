@@ -10,8 +10,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.Group?>
-<?import javafx.scene.control.RadioButton?>
 
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
           xmlns="http://javafx.com/javafx/8.0.121"
@@ -164,7 +162,6 @@
             <ColumnConstraints percentWidth="50" />
             <ColumnConstraints percentWidth="50" />
         </columnConstraints>
-
         <rowConstraints>
             <RowConstraints percentHeight="50" />
             <RowConstraints percentHeight="50" />
@@ -182,8 +179,7 @@
                       GridPane.rowIndex="0"
                       GridPane.columnIndex="0"
                       GridPane.fillHeight="true"
-                      GridPane.fillWidth="true"
-        />
+                      GridPane.fillWidth="true"/>
         <ToggleButton fx:id="class_disagree"
                       text="No, this is not for a class."
                       toggleGroup="$for_class_btns"
@@ -192,9 +188,7 @@
                       GridPane.rowIndex="1"
                       GridPane.columnIndex="0"
                       GridPane.fillHeight="true"
-                      GridPane.fillWidth="true"
-        />
-
+                      GridPane.fillWidth="true"/>
 
         <!-- Right side of bottom left pane -->
         <TextField promptText="Class Name"

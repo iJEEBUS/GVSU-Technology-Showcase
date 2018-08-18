@@ -29,19 +29,22 @@ public class new_rental_controller {
     @FXML
     DatePicker return_date_picker;
     @FXML
-    public TextField user_input_first_name;
+    public TextField
+            user_input_first_name,
+            user_input_last_name,
+            user_input_email;
     @FXML
-    public TextField user_input_last_name;
+    public TextArea
+            additional_components,
+            comments;
     @FXML
-    public TextField user_input_email;
-    @FXML
-    public TextArea additional_components;
-    @FXML
-    public TextArea comments;
-    @FXML
-    public RadioButton signature_yes;
+    public Button
+            submit_btn,
+            signature_agree;
     @FXML
     public Label terms_and_conditions_text;
+
+    private Boolean AGREED_TO_TERMS = Boolean.FALSE;
 
     /**
      * Code to execute when scene is loaded.
@@ -49,6 +52,19 @@ public class new_rental_controller {
     public void initialize() {
         String terms_and_conditions = getTermsAndConditions();
         terms_and_conditions_text.setText(terms_and_conditions);
+        submit_btn.setDisable(true);
+    }
+
+    public void handleTermsAndConditions() {
+        if (AGREED_TO_TERMS == Boolean.FALSE) {
+            AGREED_TO_TERMS = Boolean.TRUE;
+            submit_btn.setDisable(false);
+            signature_agree.setId("signature_agree_active");
+        } else {
+            AGREED_TO_TERMS = Boolean.FALSE;
+            submit_btn.setDisable(true);
+            signature_agree.setId("signature_agree");
+        }
     }
 
     /**
@@ -109,7 +125,7 @@ public class new_rental_controller {
         String technology = (String) tech_items.getValue();
         String components = additional_components.getText();
         String add_comments = comments.getText();
-        Boolean signature = signature_yes.isPressed();
+        Boolean signature = signature_agree.isPressed();
 
         LocalDate return_date = return_date_picker.getValue();
         LocalDate checkout_date = LocalDate.now(); // the time of the submission

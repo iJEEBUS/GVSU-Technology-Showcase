@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a05ed9ce-81b4-4ba8-81fe-aec5d00f00fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/CSS/new_print.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/CSS/new_print.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/CSS/new_rental_form.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/CSS/new_rental_form.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/terms_and_conditions.txt" afterPath="$PROJECT_DIR$/Hub/src/Hub/terms_and_conditions.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,15 +25,59 @@
       <content type="file-editors">
         <state>
           <leaf>
+            <file leaf-file-name="new_rental_controller.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="370">
+                    <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+                    <folding>
+                      <element signature="method#initialize#0;class#new_rental_controller#0" expanded="false" />
+                      <element signature="method#handleTermsAndConditions#0;class#new_rental_controller#0" expanded="false" />
+                      <element signature="method#getTermsAndConditions#0;class#new_rental_controller#0" expanded="false" />
+                      <element signature="method#returnToHub#0;class#new_rental_controller#0" expanded="false" />
+                      <element signature="method#submitOrder#0;class#new_rental_controller#0" expanded="false" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="7">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="new_rental.fxml" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml">
+                <provider editor-type-id="JavaFX-Scene-Builder">
+                  <state />
+                </provider>
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="729">
+                    <caret line="207" column="65" lean-forward="false" selection-start-line="207" selection-start-column="65" selection-end-line="207" selection-end-column="65" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="9">
+      <content type="file-editors">
+        <state>
+          <leaf>
             <file leaf-file-name="new_print_controller.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="900">
-                    <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+                  <state relative-caret-position="641">
+                    <caret line="76" column="33" lean-forward="false" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
                     <folding>
                       <element signature="imports" expanded="true" />
                       <element signature="method#initialize#0;class#new_print_controller#0" expanded="false" />
-                      <element signature="method#handleTermsAndConditions#0;class#new_print_controller#0" expanded="false" />
                       <element signature="method#disableClassPane#0;class#new_print_controller#0" expanded="false" />
                       <element signature="method#enableClassPane#0;class#new_print_controller#0" expanded="false" />
                       <element signature="method#getTermsAndConditions#0;class#new_print_controller#0" expanded="false" />
@@ -55,83 +99,44 @@
         </state>
       </content>
     </window>
-    <window id="4">
+    <window id="8">
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="new_print.fxml" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml">
-                <provider editor-type-id="JavaFX-Scene-Builder">
-                  <state />
-                </provider>
+            <file leaf-file-name="new_rental_form.css" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Hub/src/Hub/CSS/new_rental_form.css">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="597">
-                    <caret line="214" column="34" lean-forward="true" selection-start-line="214" selection-start-column="34" selection-end-line="214" selection-end-column="34" />
-                    <folding>
-                      <element signature="n#columnConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
-                      <element signature="n#rowConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
-                      <element signature="n#Label#0;n#GridPane#0;n#!!top" expanded="false" />
-                      <element signature="n#Button#0;n#GridPane#0;n#!!top" expanded="false" />
-                      <element signature="n#GridPane#0;n#GridPane#0;n#!!top" expanded="false" />
-                      <element signature="n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-                      <element signature="n#columnConstraints#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-                      <element signature="n#rowConstraints#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-                      <element signature="n#Button#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-                      <element signature="n#Button#1;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-                      <element signature="n#Button#2;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-                      <element signature="n#Button#3;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="5">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="new_print.css" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/Hub/src/Hub/CSS/new_print.css">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="749">
-                    <caret line="179" column="0" lean-forward="true" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+                  <state relative-caret-position="795">
+                    <caret line="209" column="1" lean-forward="false" selection-start-line="209" selection-start-column="1" selection-end-line="209" selection-end-column="1" />
                     <folding>
                       <element signature="e#28#115#0" expanded="false" />
-                      <element signature="e#148#151#0" expanded="false" />
-                      <element signature="e#176#271#0" expanded="false" />
-                      <element signature="e#282#430#0" expanded="false" />
-                      <element signature="e#447#533#0" expanded="false" />
-                      <element signature="e#546#694#0" expanded="false" />
-                      <element signature="e#713#796#0" expanded="false" />
-                      <element signature="e#854#1059#0" expanded="false" />
-                      <element signature="e#1138#1458#0" expanded="false" />
-                      <element signature="e#1568#1627#0" expanded="false" />
-                      <element signature="e#1730#1789#0" expanded="false" />
-                      <element signature="e#1846#1973#0" expanded="false" />
-                      <element signature="e#1987#2187#0" expanded="false" />
-                      <element signature="e#2207#2238#0" expanded="false" />
-                      <element signature="e#2256#2453#0" expanded="false" />
-                      <element signature="e#2476#2503#0" expanded="false" />
-                      <element signature="e#2527#2720#0" expanded="false" />
-                      <element signature="e#2740#3059#0" expanded="false" />
-                      <element signature="e#3086#3146#0" expanded="false" />
-                      <element signature="e#3171#3231#0" expanded="false" />
-                      <element signature="e#3256#3410#0" expanded="false" />
-                      <element signature="e#3440#3499#0" expanded="false" />
-                      <element signature="e#3516#3611#0" expanded="false" />
-                      <element signature="e#3665#3870#0" expanded="false" />
-                      <element signature="e#3931#4085#0" expanded="false" />
-                      <element signature="e#4170#4229#0" expanded="false" />
-                      <element signature="e#4248#4343#0" expanded="false" />
-                      <element signature="e#4367#4394#0" expanded="false" />
-                      <element signature="e#4449#4627#0" expanded="false" />
-                      <element signature="e#4655#4832#0" expanded="false" />
-                      <element signature="e#4850#5000#0" expanded="false" />
-                      <element signature="e#5024#5055#0" expanded="false" />
-                      <element signature="e#5080#5235#0" expanded="false" />
+                      <element signature="e#142#237#0" expanded="false" />
+                      <element signature="e#248#396#0" expanded="false" />
+                      <element signature="e#413#499#0" expanded="false" />
+                      <element signature="e#512#660#0" expanded="false" />
+                      <element signature="e#679#762#0" expanded="false" />
+                      <element signature="e#815#1036#0" expanded="false" />
+                      <element signature="e#1053#1204#0" expanded="false" />
+                      <element signature="e#1217#1314#0" expanded="false" />
+                      <element signature="e#1337#1463#0" expanded="false" />
+                      <element signature="e#1492#1555#0" expanded="false" />
+                      <element signature="e#1588#1736#0" expanded="false" />
+                      <element signature="e#1757#2014#0" expanded="false" />
+                      <element signature="e#2092#2412#0" expanded="false" />
+                      <element signature="e#2521#2580#0" expanded="false" />
+                      <element signature="e#2682#2741#0" expanded="false" />
+                      <element signature="e#2816#2994#0" expanded="false" />
+                      <element signature="e#3018#3244#0" expanded="false" />
+                      <element signature="e#3276#3337#0" expanded="false" />
+                      <element signature="e#3350#3497#0" expanded="false" />
+                      <element signature="e#3528#3706#0" expanded="false" />
+                      <element signature="e#3717#3943#0" expanded="false" />
+                      <element signature="e#3962#4023#0" expanded="false" />
+                      <element signature="e#4078#4256#0" expanded="false" />
+                      <element signature="e#4284#4461#0" expanded="false" />
+                      <element signature="e#4479#4629#0" expanded="false" />
+                      <element signature="e#4653#4684#0" expanded="false" />
+                      <element signature="e#4709#4864#0" expanded="false" />
                     </folding>
                   </state>
                 </provider>
@@ -147,8 +152,8 @@
       <file leaf-file-name="terms_and_conditions.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Hub/src/Hub/terms_and_conditions.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="105">
+              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -180,6 +185,8 @@
       <find>system.out.println</find>
       <find>email</find>
       <find>class_info</find>
+      <find>yes_btn</find>
+      <find>signature_yes</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,15 +231,15 @@
         <option value="$PROJECT_DIR$/Hub/src/Hub/Resources/terms_and_conditions.txt" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/rental_queue_controller.java" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/main_hub.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/CSS/Shallots.css" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/CSS/new_rental_form.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/CSS/new_print.css" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/terms_and_conditions.txt" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/CSS/new_rental_form.css" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java" />
       </list>
     </option>
   </component>
@@ -243,8 +250,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-1147" />
-    <option name="y" value="94" />
+    <option name="x" value="-1545" />
+    <option name="y" value="180" />
     <option name="width" value="1024" />
     <option name="height" value="1028" />
   </component>
@@ -289,20 +296,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Hub" type="462c0819:PsiDirectoryNode" />
               <item name="Conrollers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GVSU-Technology-Showcase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="CSS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GVSU-Technology-Showcase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="FXML" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GVSU-Technology-Showcase" type="b2602c69:ProjectViewProjectNode" />
@@ -489,20 +482,20 @@
       <workItem from="1533577239207" duration="607000" />
       <workItem from="1533663604612" duration="1162000" />
       <workItem from="1533840333765" duration="37587000" />
-      <workItem from="1534431003721" duration="27445000" />
+      <workItem from="1534431003721" duration="28183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147902000" />
+    <option name="totallyTimeSpent" value="148640000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1147" y="94" width="1024" height="1028" extended-state="1" />
+    <frame x="-1545" y="180" width="1024" height="1028" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32635984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1088,99 +1081,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/CSS/new_rental_form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="195" selection-end-column="1" />
-          <folding>
-            <element signature="e#28#115#0" expanded="false" />
-            <element signature="e#142#237#0" expanded="false" />
-            <element signature="e#248#396#0" expanded="false" />
-            <element signature="e#413#499#0" expanded="false" />
-            <element signature="e#512#660#0" expanded="false" />
-            <element signature="e#679#762#0" expanded="false" />
-            <element signature="e#815#1036#0" expanded="false" />
-            <element signature="e#1053#1204#0" expanded="false" />
-            <element signature="e#1217#1314#0" expanded="false" />
-            <element signature="e#1337#1463#0" expanded="false" />
-            <element signature="e#1492#1555#0" expanded="false" />
-            <element signature="e#1588#1736#0" expanded="false" />
-            <element signature="e#1757#2014#0" expanded="false" />
-            <element signature="e#2092#2412#0" expanded="false" />
-            <element signature="e#2521#2580#0" expanded="false" />
-            <element signature="e#2682#2741#0" expanded="false" />
-            <element signature="e#2816#2994#0" expanded="false" />
-            <element signature="e#3018#3244#0" expanded="false" />
-            <element signature="e#3276#3337#0" expanded="false" />
-            <element signature="e#3350#3497#0" expanded="false" />
-            <element signature="e#3528#3706#0" expanded="false" />
-            <element signature="e#3717#3943#0" expanded="false" />
-            <element signature="e#3962#4023#0" expanded="false" />
-            <element signature="e#4078#4256#0" expanded="false" />
-            <element signature="e#4284#4461#0" expanded="false" />
-            <element signature="e#4479#4535#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="50" column="49" lean-forward="false" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-          <folding>
-            <element signature="method#returnToHub#0;class#new_rental_controller#0" expanded="false" />
-            <element signature="method#submitOrder#0;class#new_rental_controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml">
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="192" column="26" lean-forward="true" selection-start-line="192" selection-start-column="26" selection-end-line="192" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/terms_and_conditions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="626">
+          <caret line="190" column="49" lean-forward="false" selection-start-line="190" selection-start-column="49" selection-end-line="190" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initialize#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#handleTermsAndConditions#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#disableClassPane#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#enableClassPane#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#getTermsAndConditions#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#returnToHub#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#getFirstFile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#getSecondFile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#getThirdFile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#getFourthFile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#getClassfile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#handleFile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#removeFile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#submitOrder#0;class#new_print_controller#0" expanded="false" />
+            <element signature="n#columnConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#rowConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Label#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#GridPane#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#columnConstraints#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#rowConstraints#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#1;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#2;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#3;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#columnConstraints#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#rowConstraints#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#ToggleButton#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#ToggleButton#1;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#TextField#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#VBox#0;n#GridPane#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/CSS/new_print.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="179" column="0" lean-forward="true" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+        <state relative-caret-position="540">
+          <caret line="224" column="1" lean-forward="true" selection-start-line="224" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
           <folding>
             <element signature="e#28#115#0" expanded="false" />
             <element signature="e#148#151#0" expanded="false" />
@@ -1219,26 +1155,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml">
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/CSS/new_rental_form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="209" column="1" lean-forward="false" selection-start-line="209" selection-start-column="1" selection-end-line="209" selection-end-column="1" />
+          <folding>
+            <element signature="e#28#115#0" expanded="false" />
+            <element signature="e#142#237#0" expanded="false" />
+            <element signature="e#248#396#0" expanded="false" />
+            <element signature="e#413#499#0" expanded="false" />
+            <element signature="e#512#660#0" expanded="false" />
+            <element signature="e#679#762#0" expanded="false" />
+            <element signature="e#815#1036#0" expanded="false" />
+            <element signature="e#1053#1204#0" expanded="false" />
+            <element signature="e#1217#1314#0" expanded="false" />
+            <element signature="e#1337#1463#0" expanded="false" />
+            <element signature="e#1492#1555#0" expanded="false" />
+            <element signature="e#1588#1736#0" expanded="false" />
+            <element signature="e#1757#2014#0" expanded="false" />
+            <element signature="e#2092#2412#0" expanded="false" />
+            <element signature="e#2521#2580#0" expanded="false" />
+            <element signature="e#2682#2741#0" expanded="false" />
+            <element signature="e#2816#2994#0" expanded="false" />
+            <element signature="e#3018#3244#0" expanded="false" />
+            <element signature="e#3276#3337#0" expanded="false" />
+            <element signature="e#3350#3497#0" expanded="false" />
+            <element signature="e#3528#3706#0" expanded="false" />
+            <element signature="e#3717#3943#0" expanded="false" />
+            <element signature="e#3962#4023#0" expanded="false" />
+            <element signature="e#4078#4256#0" expanded="false" />
+            <element signature="e#4284#4461#0" expanded="false" />
+            <element signature="e#4479#4629#0" expanded="false" />
+            <element signature="e#4653#4684#0" expanded="false" />
+            <element signature="e#4709#4864#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/terms_and_conditions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="76" column="33" lean-forward="false" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initialize#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#disableClassPane#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#enableClassPane#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#getTermsAndConditions#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#returnToHub#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#getFirstFile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#getSecondFile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#getThirdFile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#getFourthFile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#getClassfile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#handleFile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#removeFile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#submitOrder#0;class#new_print_controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="214" column="34" lean-forward="true" selection-start-line="214" selection-start-column="34" selection-end-line="214" selection-end-column="34" />
+        <state relative-caret-position="729">
+          <caret line="207" column="65" lean-forward="false" selection-start-line="207" selection-start-column="65" selection-end-line="207" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
           <folding>
-            <element signature="n#columnConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#rowConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Label#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#GridPane#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#columnConstraints#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#rowConstraints#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#1;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#2;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#3;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="method#initialize#0;class#new_rental_controller#0" expanded="false" />
+            <element signature="method#handleTermsAndConditions#0;class#new_rental_controller#0" expanded="false" />
+            <element signature="method#getTermsAndConditions#0;class#new_rental_controller#0" expanded="false" />
+            <element signature="method#returnToHub#0;class#new_rental_controller#0" expanded="false" />
+            <element signature="method#submitOrder#0;class#new_rental_controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
