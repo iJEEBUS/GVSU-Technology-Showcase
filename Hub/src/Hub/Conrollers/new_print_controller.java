@@ -52,7 +52,14 @@ public class new_print_controller {
     private Boolean upload_btn_3_filled = Boolean.FALSE;
     private Boolean upload_btn_4_filled = Boolean.FALSE;
     private Boolean class_file_btn_filled = Boolean.FALSE;
+    private Boolean for_class = Boolean.FALSE;
     private Boolean AGREED_TO_TERMS = Boolean.FALSE;
+
+    private String file_1_location = "";
+    private String file_2_location = "";
+    private String file_3_location = "";
+    private String file_4_location = "";
+    private String class_file_location = "";
 
     /**
      * Code that executes when the pane is loaded.
@@ -88,6 +95,7 @@ public class new_print_controller {
         class_name_input.setDisable(true);
         upload_class_file_btn.setDisable(true);
         class_disagree.setId("class_disagree_active");
+        for_class = Boolean.TRUE;
 
     }
 
@@ -100,6 +108,7 @@ public class new_print_controller {
         class_name_input.setDisable(false);
         upload_class_file_btn.setDisable(false);
         class_disagree.setId("class_disagree");
+        for_class = Boolean.FALSE;
     }
 
     /**
@@ -151,7 +160,9 @@ public class new_print_controller {
      */
     public void getFirstFile() {
         if (upload_btn_1_filled == Boolean.FALSE) {
-            if (handleFile() == Boolean.TRUE){
+            file_1_location = handleFile();
+            if (file_1_location != null){
+
                 upload_btn_1.setText(temp_file.getName());
                 upload_btn_1.setId("file_loaded_btn");
                 upload_btn_1_filled = Boolean.TRUE;
@@ -168,7 +179,8 @@ public class new_print_controller {
      */
     public void getSecondFile() {
         if (upload_btn_2_filled == Boolean.FALSE) {
-            if (handleFile() == Boolean.TRUE) {
+            file_2_location = handleFile();
+            if (file_2_location != null) {
                 upload_btn_2.setText(temp_file.getName());
                 upload_btn_2.setId("file_loaded_btn");
                 upload_btn_2_filled = Boolean.TRUE;
@@ -185,7 +197,8 @@ public class new_print_controller {
      */
     public void getThirdFile() {
         if (upload_btn_3_filled == Boolean.FALSE) {
-            if (handleFile() == Boolean.TRUE){
+            file_3_location = handleFile();
+            if (file_3_location != null){
                 upload_btn_3.setText(temp_file.getName());
                 upload_btn_3.setId("file_loaded_btn");
                 upload_btn_3_filled = Boolean.TRUE;
@@ -202,7 +215,8 @@ public class new_print_controller {
      */
     public void getFourthFile() {
         if (upload_btn_4_filled == Boolean.FALSE) {
-            if (handleFile() == Boolean.TRUE){
+            file_4_location = handleFile();
+            if (file_4_location != null){
                 upload_btn_4.setText(temp_file.getName());
                 upload_btn_4.setId("file_loaded_btn");
                 upload_btn_4_filled = Boolean.TRUE;
@@ -219,7 +233,8 @@ public class new_print_controller {
      */
     public void getClassfile() {
         if (class_file_btn_filled == Boolean.FALSE) {
-            if (handleFile() == Boolean.TRUE){
+            class_file_location = handleFile();
+            if (class_file_location != null){
                 upload_class_file_btn.setText(temp_file.getName());
                 upload_class_file_btn.setId("file_loaded_btn");
                 class_file_btn_filled = Boolean.TRUE;
@@ -236,7 +251,7 @@ public class new_print_controller {
      * Allows up to 4 files to be uploaded to the temporary queue.
      * Displays a warning when the queue length has been reached.
      */
-    private Boolean handleFile() {
+    private String handleFile() {
 
         // Clear temp file
         temp_file = null;
@@ -250,7 +265,7 @@ public class new_print_controller {
             if (file_limit_reached.getOwner() != stage)
                 file_limit_reached.initOwner(stage);
             file_limit_reached.showAndWait();
-            return Boolean.FALSE;
+//            return Boolean.FALSE;
 
         } else {
 
@@ -260,8 +275,11 @@ public class new_print_controller {
             fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
             temporary_file_queue.add(file);
             temp_file = file;
-            return Boolean.TRUE;
+
+            return temp_file.getAbsolutePath();
+//            return Boolean.TRUE;
         }
+        return null;
     }
 
     /**
@@ -318,20 +336,47 @@ public class new_print_controller {
      * Returns to the main screen of the hub.
      */
     public void submitOrder() {
-        String fname = user_input_first_name.getText();
-        String lname = user_input_last_name.getText();
-        String email = user_input_email.getText();
-        Boolean success;
 
-        Database db = new Database();
-        db.connectToDatabase();
-        success = db.sendPrintQuery(fname, lname, email);
+        if (AGREED_TO_TERMS == Boolean.TRUE) {
 
-        if (success) {
-            temporary_file_queue.clear();
-            returnToHub();
-        } else {
-            System.out.println("Order not submitted. Please try again.");
+            String fname = user_input_first_name.getText();
+            String lname = user_input_last_name.getText();
+            String email = user_input_email.getText();
+
+            String print_1 = file_1_location;
+            String print_2 = file_2_location;
+            String print_3 = file_3_location;
+            String print_4 = file_4_location;
+
+            Boolean for_class = class_agree.isSelected();
+            String class_proof = class_file_location;
+            String class_name = class_name_input.getText();
+
+            Boolean t_and_c = AGREED_TO_TERMS;
+            Boolean success;
+
+            Database db = new Database();
+            db.connectToDatabase();
+            success = db.sendPrintQuery(
+                    fname,
+                    lname,
+                    email,
+                    print_1,
+                    print_2,
+                    print_3,
+                    print_4,
+                    for_class,
+                    class_name,
+                    class_proof,
+                    t_and_c);
+
+            if (success) {
+                temporary_file_queue.clear();
+                returnToHub();
+            } else {
+                System.out.println("Order not submitted. Please try again.");
+            }
+
         }
     }
 }

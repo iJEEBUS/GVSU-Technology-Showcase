@@ -70,12 +70,18 @@
                    GridPane.hgrow="ALWAYS"
                    GridPane.rowIndex="0">
             <columns>
-                <TableColumn fx:id="last_name_col"
-                             text="Last Name" />
-                <TableColumn fx:id="first_name_col"
-                             text="First Name" />
-                <TableColumn fx:id="email_col"
-                             text="Email" />
+                <TableColumn fx:id="first_name_col" text="First Name" />
+                <TableColumn fx:id="last_name_col" text="Last Name" />
+                <TableColumn fx:id="email_col" text="Email" />
+                <TableColumn fx:id="print_1" text="Print One" />
+                <TableColumn fx:id="print_2" text="Print Two" />
+                <TableColumn fx:id="print_3" text="Print Three" />
+                <TableColumn fx:id="print_4" text="Print Four" />
+                <TableColumn fx:id="for_class_col" text="For Class" />
+                <TableColumn fx:id="class_name_col" text="Class" />
+                <TableColumn fx:id="class_proof_col" text="Class Proof" />
+                <TableColumn fx:id="t_and_c_col" text="Terms and Conditions" />
+                <TableColumn fx:id="timestamp" text="Time Submitted" />
             </columns>
         </TableView>
 

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a05ed9ce-81b4-4ba8-81fe-aec5d00f00fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/CSS/new_rental_form.css" afterPath="$PROJECT_DIR$/Hub/src/Hub/CSS/new_rental_form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/printQueueOrder.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/printQueueOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/Database.java" afterPath="$PROJECT_DIR$/Hub/src/Hub/Database.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hub/src/Hub/FXML/print_queue.fxml" afterPath="$PROJECT_DIR$/Hub/src/Hub/FXML/print_queue.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,21 +22,31 @@
     </SUITE>
   </component>
   <component name="DockManager">
-    <window id="6">
+    <window id="16">
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="new_rental_controller.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java">
+            <file leaf-file-name="Database.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Database.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="370">
-                    <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+                  <state relative-caret-position="616">
+                    <caret line="100" column="34" lean-forward="true" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
                     <folding>
-                      <element signature="method#initialize#0;class#new_rental_controller#0" expanded="false" />
-                      <element signature="method#handleTermsAndConditions#0;class#new_rental_controller#0" expanded="false" />
-                      <element signature="method#getTermsAndConditions#0;class#new_rental_controller#0" expanded="false" />
-                      <element signature="method#returnToHub#0;class#new_rental_controller#0" expanded="false" />
-                      <element signature="method#submitOrder#0;class#new_rental_controller#0" expanded="false" />
+                      <element signature="imports" expanded="true" />
+                      <element signature="method#connectToDatabase#0;class#Database#0" expanded="false" />
+                      <element signature="method#kill#0;class#Database#0" expanded="false" />
+                      <element signature="method#sendRentalQuery#0;class#Database#0" expanded="false" />
+                      <element signature="method#getRentalQueueOrders#0;class#Database#0" expanded="false" />
+                      <element signature="e#6616#6634#0" expanded="true" />
+                      <element signature="method#getPrintQueueOrder#0;class#Database#0" expanded="false" />
+                      <element signature="e#9444#9461#0" expanded="true" />
+                      <marker date="1534797049747" expanded="true" signature="2447:2465" ph="INSERT INTO prints... " />
+                      <marker date="1534797049747" expanded="true" signature="2447:2505" ph="INSERT INTO prints... " />
+                      <marker date="1534797049747" expanded="true" signature="2447:2618" ph="INSERT INTO prints... " />
+                      <marker date="1534797049747" expanded="true" signature="2588:2618" ph="VALUES (?,?,... " />
+                      <marker date="1534797049747" expanded="true" signature="4857:5009" ph="INSERT INTO rentals... " />
+                      <marker date="1534797049747" expanded="true" signature="6663:6684" ph="SELECT * FRO... rentals" />
+                      <marker date="1534797049747" expanded="true" signature="9490:9510" ph="SELECT * FRO... prints" />
                     </folding>
                   </state>
                 </provider>
@@ -45,39 +56,19 @@
         </state>
       </content>
     </window>
-    <window id="7">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="new_rental.fxml" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml">
-                <provider editor-type-id="JavaFX-Scene-Builder">
-                  <state />
-                </provider>
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="729">
-                    <caret line="207" column="65" lean-forward="false" selection-start-line="207" selection-start-column="65" selection-end-line="207" selection-end-column="65" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="9">
+    <window id="18">
       <content type="file-editors">
         <state>
           <leaf>
             <file leaf-file-name="new_print_controller.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="641">
-                    <caret line="76" column="33" lean-forward="false" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+                  <state relative-caret-position="653">
+                    <caret line="357" column="34" lean-forward="true" selection-start-line="357" selection-start-column="34" selection-end-line="357" selection-end-column="34" />
                     <folding>
                       <element signature="imports" expanded="true" />
                       <element signature="method#initialize#0;class#new_print_controller#0" expanded="false" />
+                      <element signature="method#handleTermsAndConditions#0;class#new_print_controller#0" expanded="false" />
                       <element signature="method#disableClassPane#0;class#new_print_controller#0" expanded="false" />
                       <element signature="method#enableClassPane#0;class#new_print_controller#0" expanded="false" />
                       <element signature="method#getTermsAndConditions#0;class#new_print_controller#0" expanded="false" />
@@ -89,54 +80,6 @@
                       <element signature="method#getClassfile#0;class#new_print_controller#0" expanded="false" />
                       <element signature="method#handleFile#0;class#new_print_controller#0" expanded="false" />
                       <element signature="method#removeFile#0;class#new_print_controller#0" expanded="false" />
-                      <element signature="method#submitOrder#0;class#new_print_controller#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="8">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="new_rental_form.css" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/Hub/src/Hub/CSS/new_rental_form.css">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="795">
-                    <caret line="209" column="1" lean-forward="false" selection-start-line="209" selection-start-column="1" selection-end-line="209" selection-end-column="1" />
-                    <folding>
-                      <element signature="e#28#115#0" expanded="false" />
-                      <element signature="e#142#237#0" expanded="false" />
-                      <element signature="e#248#396#0" expanded="false" />
-                      <element signature="e#413#499#0" expanded="false" />
-                      <element signature="e#512#660#0" expanded="false" />
-                      <element signature="e#679#762#0" expanded="false" />
-                      <element signature="e#815#1036#0" expanded="false" />
-                      <element signature="e#1053#1204#0" expanded="false" />
-                      <element signature="e#1217#1314#0" expanded="false" />
-                      <element signature="e#1337#1463#0" expanded="false" />
-                      <element signature="e#1492#1555#0" expanded="false" />
-                      <element signature="e#1588#1736#0" expanded="false" />
-                      <element signature="e#1757#2014#0" expanded="false" />
-                      <element signature="e#2092#2412#0" expanded="false" />
-                      <element signature="e#2521#2580#0" expanded="false" />
-                      <element signature="e#2682#2741#0" expanded="false" />
-                      <element signature="e#2816#2994#0" expanded="false" />
-                      <element signature="e#3018#3244#0" expanded="false" />
-                      <element signature="e#3276#3337#0" expanded="false" />
-                      <element signature="e#3350#3497#0" expanded="false" />
-                      <element signature="e#3528#3706#0" expanded="false" />
-                      <element signature="e#3717#3943#0" expanded="false" />
-                      <element signature="e#3962#4023#0" expanded="false" />
-                      <element signature="e#4078#4256#0" expanded="false" />
-                      <element signature="e#4284#4461#0" expanded="false" />
-                      <element signature="e#4479#4629#0" expanded="false" />
-                      <element signature="e#4653#4684#0" expanded="false" />
-                      <element signature="e#4709#4864#0" expanded="false" />
                     </folding>
                   </state>
                 </provider>
@@ -149,12 +92,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="terms_and_conditions.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/terms_and_conditions.txt">
+      <file leaf-file-name="print_queue_controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="760">
+              <caret line="133" column="86" lean-forward="false" selection-start-line="133" selection-start-column="86" selection-end-line="133" selection-end-column="86" />
+              <folding>
+                <element signature="method#initialize#0;class#print_queue_controller#0" expanded="false" />
+                <element signature="method#returnToHub#0;class#print_queue_controller#0" expanded="false" />
+                <element signature="method#getPrintQueueOrder#0;class#print_queue_controller#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="printQueueOrder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/printQueueOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="73" column="8" lean-forward="false" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#printQueueOrder#0;class#printQueueOrder#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="print_queue.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/print_queue.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="775">
+              <caret line="83" column="71" lean-forward="false" selection-start-line="83" selection-start-column="71" selection-end-line="83" selection-end-column="71" />
+              <folding>
+                <element signature="n#columnConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
+                <element signature="n#rowConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
+                <element signature="n#Label#0;n#GridPane#0;n#!!top" expanded="false" />
+                <element signature="n#Button#0;n#GridPane#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -187,6 +165,9 @@
       <find>class_info</find>
       <find>yes_btn</find>
       <find>signature_yes</find>
+      <find>class_file_btn_filled</find>
+      <find>system.out.print</find>
+      <find>getprintQueueOrder()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,23 +204,24 @@
         <option value="$PROJECT_DIR$/Hub/src/Hub/print_queue.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/print_queue_controller.java" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/time_clock_controller.java" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/print_queue.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/CSS/print_queue.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/rental_queue.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/rentalQueueOrder.java" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/Database.java" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Resources/terms_and_conditions.txt" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/rental_queue_controller.java" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/main_hub.fxml" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/CSS/Shallots.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/CSS/new_print.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/terms_and_conditions.txt" />
-        <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/CSS/new_rental_form.css" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml" />
         <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/CSS/Shallots.css" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/FXML/print_queue.fxml" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/printQueueOrder.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/Database.java" />
+        <option value="$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java" />
       </list>
     </option>
   </component>
@@ -249,11 +231,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-1545" />
-    <option name="y" value="180" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="392" />
+    <option name="y" value="22" />
     <option name="width" value="1024" />
-    <option name="height" value="1028" />
+    <option name="height" value="1258" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -302,15 +284,7 @@
               <item name="Hub" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="Icons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GVSU-Technology-Showcase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="Icons" type="462c0819:PsiDirectoryNode" />
-              <item name="Custom" type="462c0819:PsiDirectoryNode" />
+              <item name="FXML" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -482,26 +456,25 @@
       <workItem from="1533577239207" duration="607000" />
       <workItem from="1533663604612" duration="1162000" />
       <workItem from="1533840333765" duration="37587000" />
-      <workItem from="1534431003721" duration="28183000" />
+      <workItem from="1534431003721" duration="43399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148640000" />
+    <option name="totallyTimeSpent" value="163856000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1545" y="180" width="1024" height="1028" extended-state="1" />
-    <editor active="true" />
+    <frame x="392" y="22" width="1024" height="1258" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32635984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41821247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2615063" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1306914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -563,12 +536,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java</url>
-          <line>320</line>
+          <line>290</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -616,7 +589,7 @@
         <state relative-caret-position="420">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -629,16 +602,18 @@
             <element signature="imports" expanded="true" />
             <element signature="method#connectToDatabase#0;class#Database#0" expanded="false" />
             <element signature="method#kill#0;class#Database#0" expanded="false" />
-            <element signature="method#sendPrintQuery#0;class#Database#0" expanded="false" />
+            <element signature="method#sendRentalQuery#0;class#Database#0" expanded="false" />
             <element signature="method#getRentalQueueOrders#0;class#Database#0" expanded="false" />
-            <element signature="e#5761#5779#0" expanded="true" />
-            <element signature="method#getprintQueueOrder#0;class#Database#0" expanded="false" />
-            <element signature="e#8589#8606#0" expanded="true" />
-            <marker date="1534435095382" expanded="true" signature="1878:1927" ph="INSERT INTO prints... " />
-            <marker date="1534435095382" expanded="true" signature="1878:1974" ph="INSERT INTO prints... " />
-            <marker date="1534435095382" expanded="true" signature="4002:4154" ph="INSERT INTO rentals... " />
-            <marker date="1534435095382" expanded="true" signature="5808:5829" ph="SELECT * FRO... rentals" />
-            <marker date="1534435095382" expanded="true" signature="8635:8655" ph="SELECT * FRO... prints" />
+            <element signature="e#6616#6634#0" expanded="true" />
+            <element signature="method#getPrintQueueOrder#0;class#Database#0" expanded="false" />
+            <element signature="e#9444#9461#0" expanded="true" />
+            <marker date="1534797049747" expanded="true" signature="2447:2465" ph="INSERT INTO prints... " />
+            <marker date="1534797049747" expanded="true" signature="2447:2505" ph="INSERT INTO prints... " />
+            <marker date="1534797049747" expanded="true" signature="2447:2618" ph="INSERT INTO prints... " />
+            <marker date="1534797049747" expanded="true" signature="2588:2618" ph="VALUES (?,?,... " />
+            <marker date="1534797049747" expanded="true" signature="4857:5009" ph="INSERT INTO rentals... " />
+            <marker date="1534797049747" expanded="true" signature="6663:6684" ph="SELECT * FRO... rentals" />
+            <marker date="1534797049747" expanded="true" signature="9490:9510" ph="SELECT * FRO... prints" />
           </folding>
         </state>
       </provider>
@@ -721,16 +696,18 @@
             <element signature="imports" expanded="true" />
             <element signature="method#connectToDatabase#0;class#Database#0" expanded="false" />
             <element signature="method#kill#0;class#Database#0" expanded="false" />
-            <element signature="method#sendPrintQuery#0;class#Database#0" expanded="false" />
+            <element signature="method#sendRentalQuery#0;class#Database#0" expanded="false" />
             <element signature="method#getRentalQueueOrders#0;class#Database#0" expanded="false" />
-            <element signature="e#5761#5779#0" expanded="true" />
-            <element signature="method#getprintQueueOrder#0;class#Database#0" expanded="false" />
-            <element signature="e#8589#8606#0" expanded="true" />
-            <marker date="1534435095382" expanded="true" signature="1878:1927" ph="INSERT INTO prints... " />
-            <marker date="1534435095382" expanded="true" signature="1878:1974" ph="INSERT INTO prints... " />
-            <marker date="1534435095382" expanded="true" signature="4002:4154" ph="INSERT INTO rentals... " />
-            <marker date="1534435095382" expanded="true" signature="5808:5829" ph="SELECT * FRO... rentals" />
-            <marker date="1534435095382" expanded="true" signature="8635:8655" ph="SELECT * FRO... prints" />
+            <element signature="e#6616#6634#0" expanded="true" />
+            <element signature="method#getPrintQueueOrder#0;class#Database#0" expanded="false" />
+            <element signature="e#9444#9461#0" expanded="true" />
+            <marker date="1534797049747" expanded="true" signature="2447:2465" ph="INSERT INTO prints... " />
+            <marker date="1534797049747" expanded="true" signature="2447:2505" ph="INSERT INTO prints... " />
+            <marker date="1534797049747" expanded="true" signature="2447:2618" ph="INSERT INTO prints... " />
+            <marker date="1534797049747" expanded="true" signature="2588:2618" ph="VALUES (?,?,... " />
+            <marker date="1534797049747" expanded="true" signature="4857:5009" ph="INSERT INTO rentals... " />
+            <marker date="1534797049747" expanded="true" signature="6663:6684" ph="SELECT * FRO... rentals" />
+            <marker date="1534797049747" expanded="true" signature="9490:9510" ph="SELECT * FRO... prints" />
           </folding>
         </state>
       </provider>
@@ -922,22 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/print_queue.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding>
-            <element signature="n#columnConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#rowConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Label#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#0;n#GridPane#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/ComboBox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2250">
@@ -956,14 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="416" column="0" lean-forward="false" selection-start-line="416" selection-start-column="0" selection-end-line="416" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/printQueueOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1022,93 +975,6 @@
           <folding>
             <element signature="method#rentalQueueOrder#0;class#rentalQueueOrder#0" expanded="false" />
             <element signature="method#rentalQueueOrder#1;class#rentalQueueOrder#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="75" column="22" lean-forward="false" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initialize#0;class#print_queue_controller#0" expanded="false" />
-            <element signature="method#returnToHub#0;class#print_queue_controller#0" expanded="false" />
-            <element signature="method#getPrintQueueOrder#0;class#print_queue_controller#0" expanded="false" />
-            <element signature="method#updateTable#0;class#print_queue_controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/main_hub.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="63" column="30" lean-forward="false" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/CSS/Shallots.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#connectToDatabase#0;class#Database#0" expanded="false" />
-            <element signature="method#kill#0;class#Database#0" expanded="false" />
-            <element signature="method#sendPrintQuery#0;class#Database#0" expanded="false" />
-            <element signature="method#getRentalQueueOrders#0;class#Database#0" expanded="false" />
-            <element signature="e#5761#5779#0" expanded="true" />
-            <element signature="method#getprintQueueOrder#0;class#Database#0" expanded="false" />
-            <element signature="e#8589#8606#0" expanded="true" />
-            <marker date="1534435095382" expanded="true" signature="1878:1927" ph="INSERT INTO prints... " />
-            <marker date="1534435095382" expanded="true" signature="1878:1974" ph="INSERT INTO prints... " />
-            <marker date="1534435095382" expanded="true" signature="4002:4154" ph="INSERT INTO rentals... " />
-            <marker date="1534435095382" expanded="true" signature="5808:5829" ph="SELECT * FRO... rentals" />
-            <marker date="1534435095382" expanded="true" signature="8635:8655" ph="SELECT * FRO... prints" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="190" column="49" lean-forward="false" selection-start-line="190" selection-start-column="49" selection-end-line="190" selection-end-column="49" />
-          <folding>
-            <element signature="n#columnConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#rowConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Label#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#GridPane#0;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#columnConstraints#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#rowConstraints#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#1;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#2;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#3;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#columnConstraints#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#rowConstraints#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#ToggleButton#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#ToggleButton#1;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#TextField#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#Button#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
-            <element signature="n#VBox#0;n#GridPane#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1192,37 +1058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/terms_and_conditions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="76" column="33" lean-forward="false" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initialize#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#disableClassPane#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#enableClassPane#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#getTermsAndConditions#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#returnToHub#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#getFirstFile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#getSecondFile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#getThirdFile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#getFourthFile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#getClassfile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#handleFile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#removeFile#0;class#new_print_controller#0" expanded="false" />
-            <element signature="method#submitOrder#0;class#new_print_controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/new_rental.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1236,14 +1071,157 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_rental_controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        <state relative-caret-position="375">
+          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
           <folding>
             <element signature="method#initialize#0;class#new_rental_controller#0" expanded="false" />
             <element signature="method#handleTermsAndConditions#0;class#new_rental_controller#0" expanded="false" />
             <element signature="method#getTermsAndConditions#0;class#new_rental_controller#0" expanded="false" />
             <element signature="method#returnToHub#0;class#new_rental_controller#0" expanded="false" />
             <element signature="method#submitOrder#0;class#new_rental_controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/terms_and_conditions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/main_hub.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/new_print.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="916">
+          <caret line="173" column="41" lean-forward="true" selection-start-line="173" selection-start-column="41" selection-end-line="173" selection-end-column="41" />
+          <folding>
+            <element signature="n#columnConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#rowConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Label#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#GridPane#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#columnConstraints#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#rowConstraints#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#0;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#1;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#2;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#3;n#GridPane#1;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#columnConstraints#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#rowConstraints#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#ToggleButton#1;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#TextField#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#0;n#GridPane#2;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#VBox#0;n#GridPane#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/CSS/Shallots.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/FXML/print_queue.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="83" column="71" lean-forward="false" selection-start-line="83" selection-start-column="71" selection-end-line="83" selection-end-column="71" />
+          <folding>
+            <element signature="n#columnConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#rowConstraints#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Label#0;n#GridPane#0;n#!!top" expanded="false" />
+            <element signature="n#Button#0;n#GridPane#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/print_queue_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="133" column="86" lean-forward="false" selection-start-line="133" selection-start-column="86" selection-end-line="133" selection-end-column="86" />
+          <folding>
+            <element signature="method#initialize#0;class#print_queue_controller#0" expanded="false" />
+            <element signature="method#returnToHub#0;class#print_queue_controller#0" expanded="false" />
+            <element signature="method#getPrintQueueOrder#0;class#print_queue_controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/printQueueOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="73" column="8" lean-forward="false" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#printQueueOrder#0;class#printQueueOrder#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Conrollers/new_print_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="357" column="34" lean-forward="true" selection-start-line="357" selection-start-column="34" selection-end-line="357" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initialize#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#handleTermsAndConditions#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#disableClassPane#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#enableClassPane#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#getTermsAndConditions#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#returnToHub#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#getFirstFile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#getSecondFile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#getThirdFile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#getFourthFile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#getClassfile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#handleFile#0;class#new_print_controller#0" expanded="false" />
+            <element signature="method#removeFile#0;class#new_print_controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hub/src/Hub/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="100" column="34" lean-forward="true" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#connectToDatabase#0;class#Database#0" expanded="false" />
+            <element signature="method#kill#0;class#Database#0" expanded="false" />
+            <element signature="method#sendRentalQuery#0;class#Database#0" expanded="false" />
+            <element signature="method#getRentalQueueOrders#0;class#Database#0" expanded="false" />
+            <element signature="e#6616#6634#0" expanded="true" />
+            <element signature="method#getPrintQueueOrder#0;class#Database#0" expanded="false" />
+            <element signature="e#9444#9461#0" expanded="true" />
+            <marker date="1534797049747" expanded="true" signature="2447:2465" ph="INSERT INTO prints... " />
+            <marker date="1534797049747" expanded="true" signature="2447:2505" ph="INSERT INTO prints... " />
+            <marker date="1534797049747" expanded="true" signature="2447:2618" ph="INSERT INTO prints... " />
+            <marker date="1534797049747" expanded="true" signature="2588:2618" ph="VALUES (?,?,... " />
+            <marker date="1534797049747" expanded="true" signature="4857:5009" ph="INSERT INTO rentals... " />
+            <marker date="1534797049747" expanded="true" signature="6663:6684" ph="SELECT * FRO... rentals" />
+            <marker date="1534797049747" expanded="true" signature="9490:9510" ph="SELECT * FRO... prints" />
           </folding>
         </state>
       </provider>

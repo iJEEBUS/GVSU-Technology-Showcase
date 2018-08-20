@@ -20,8 +20,19 @@ public class print_queue_controller {
     @FXML
     TableView<printQueueOrder> print_queue_table;
     @FXML
-    TableColumn<printQueueOrder, String> last_name_col, first_name_col, email_col;
-
+    TableColumn<printQueueOrder, String>
+            first_name_col,
+            last_name_col,
+            email_col,
+            print_1,
+            print_2,
+            print_3,
+            print_4,
+            for_class_col,
+            class_name_col,
+            class_proof_col,
+            t_and_c_col,
+            timestamp;
     /**
      * Code to execute when scene is loaded.
      */
@@ -59,7 +70,7 @@ public class print_queue_controller {
         db.connectToDatabase();
 
         // The list of all the queue objects
-        List<printQueueOrder> print_queue_orders = db.getprintQueueOrder();
+        List<printQueueOrder> print_queue_orders = db.getPrintQueueOrder();
 
 
         // Add all instances of an order to the observable list print queue
@@ -78,29 +89,53 @@ public class print_queue_controller {
         // Clear the table
         print_queue_table.getItems().clear();
 
-        // Populate / set column sizes
-        last_name_col.setCellValueFactory(new PropertyValueFactory<>("LastName")); // Last name column
-        first_name_col.setCellValueFactory(new PropertyValueFactory<>("FirstName")); // First name column
-        email_col.setCellValueFactory(new PropertyValueFactory<>("email")); // Email column
-
-        last_name_col.prefWidthProperty().bind(print_queue_table.widthProperty().divide(3));
-        first_name_col.prefWidthProperty().bind(print_queue_table.widthProperty().divide(3));
-        email_col.prefWidthProperty().bind(print_queue_table.widthProperty().divide(3));
-
-
-        print_queue_table.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
-
-        // Set columns to be non-sortable / non-resizable
-        last_name_col.setSortable(false);
-        first_name_col.setSortable(false);
-        email_col.setSortable(false);
-        last_name_col.setResizable(false);
-        first_name_col.setResizable(false);
-        email_col.setResizable(false);
+        // Set columns to non-editable
         first_name_col.setEditable(false);
         last_name_col.setEditable(false);
         email_col.setEditable(false);
+        print_1.setEditable(false);
+        print_2.setEditable(false);
+        print_3.setEditable(false);
+        print_4.setEditable(false);
+        for_class_col.setEditable(false);
+        class_name_col.setEditable(false);
+        class_proof_col.setEditable(false);
+        t_and_c_col.setEditable(false);
+        timestamp.setEditable(false);
 
+        timestamp.setSortable(true); // can sort by submission times
+
+
+        // Set width of columns
+        first_name_col.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
+        last_name_col.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
+        email_col.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
+        print_1.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
+        print_2.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
+        print_3.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
+        print_4.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
+        for_class_col.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
+        class_name_col.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
+        class_proof_col.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
+        t_and_c_col.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
+        timestamp.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
+
+        // Populate columns
+        first_name_col.setCellValueFactory(new PropertyValueFactory<>("FirstName"));
+        last_name_col.setCellValueFactory(new PropertyValueFactory<>("LastName"));
+        email_col.setCellValueFactory(new PropertyValueFactory<>("Email"));
+        print_1.setCellValueFactory(new PropertyValueFactory<>("PrintOne"));
+        print_2.setCellValueFactory(new PropertyValueFactory<>("PrintTwo"));
+        print_3.setCellValueFactory(new PropertyValueFactory<>("PrintThree"));
+        print_4.setCellValueFactory(new PropertyValueFactory<>("PrintFour"));
+        for_class_col.setCellValueFactory(new PropertyValueFactory<>("ForClass"));
+        class_name_col.setCellValueFactory(new PropertyValueFactory<>("ClassName"));
+        class_proof_col.setCellValueFactory(new PropertyValueFactory<>("ClassProof"));
+        t_and_c_col.setCellValueFactory(new PropertyValueFactory<>("TermsAndConditions"));
+        timestamp.setCellValueFactory(new PropertyValueFactory<>("SubmissionTime"));
+
+        // Apply the resizing
+        print_queue_table.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
 
         print_queue_table.setItems(getPrintQueueOrder()); // Throws a SQLException
         print_queue_table.refresh();

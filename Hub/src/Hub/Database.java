@@ -2,6 +2,7 @@ package Hub;
 
 import Hub.Conrollers.printQueueOrder;
 import Hub.Conrollers.rentalQueueOrder;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 
 import javax.swing.table.DefaultTableModel;
 import java.sql.*;
@@ -55,33 +56,51 @@ public class Database {
      * Creates and sends a query to the 3d printing database with all of the
      * needed user inputs.
      */
-    public Boolean sendPrintQuery(String fname, String lname, String email) {
-//        System.out.println("Generating query to submit....");
+    public Boolean sendPrintQuery(String fname,
+                                  String lname,
+                                  String email,
+                                  String file_1,
+                                  String file_2,
+                                  String file_3,
+                                  String file_4,
+                                  Boolean for_class,
+                                  String class_name,
+                                  String class_proof,
+                                  Boolean t_and_c) {
 
-        // make sure that all of the text boxes are filled
-        if (fname != null & lname != null & email != null) {
+        // make sure that the terms and conditions are signed
+        // and that the needed info is inputted
+        if (
+                fname != null &
+                lname != null &
+                email != null) {
 
-            String query = "INSERT INTO prints (last_name, first_name, email)"
-                            + "VALUES (?,?,?)";
-            System.out.println("Query skeleton created.");
-
+            String query = "INSERT INTO prints(first_name, last_name, email, print_one, print_two, print_three, print_four, for_class, class_name, class_proof, t_and_c) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
 
             // Connect to and send query to database
             try {
-                System.out.println("Connecting to database....");
                 Connection myConn = connectToDatabase();
 
                 // Check if connection exists.
                 // If no, try to reconnect 5 times before quitting.
                 if (myConn != null) {
+
                     System.out.println("Adding meat to query bones....");
                     PreparedStatement final_statement = myConn.prepareStatement(query);
-                    final_statement.setString(1,lname);
-                    final_statement.setString(2, fname);
+
+                    final_statement.setString(1,fname);
+                    final_statement.setString(2, lname);
                     final_statement.setString(3, email);
+                    final_statement.setString(4, file_1);
+                    final_statement.setString(5, file_2);
+                    final_statement.setString(6, file_3);
+                    final_statement.setString(7, file_4);
+                    final_statement.setBoolean(8, for_class);
+                    final_statement.setString(9, class_name);
+                    final_statement.setString(10, class_proof);
+                    final_statement.setBoolean(11, t_and_c);
+
                     final_statement.execute();
-                    System.out.println("Query executed.");
-                    System.out.println("Killing connection to database...:(");
                     return true;
                 } else {
                     for (int i = 0; i < 5; i++) {
@@ -94,11 +113,10 @@ public class Database {
             } catch (Exception e) {
                 System.out.println("Connection failed. Check connection and try again.");
                 e.printStackTrace();
-
             }
-            }
-        return false;
         }
+        return false;
+    }
 
 
     /**
@@ -218,7 +236,7 @@ public class Database {
         return null;
     }
 
-    public List<printQueueOrder> getprintQueueOrder() {
+    public List<printQueueOrder> getPrintQueueOrder() {
 
         List<printQueueOrder> all_row_data = new ArrayList<printQueueOrder>();
 
@@ -246,20 +264,34 @@ public class Database {
                     myConn.close();
                 } else {
 
-                    ResultSetMetaData meta_data = query_response.getMetaData();
-                    int colCount = meta_data.getColumnCount();
-
-                    for (int i = 1; i < colCount; i++) {
-                        String col_name = meta_data.getColumnName(i);
-                        System.out.println(col_name);
-                    }
-
                     while (query_response.next()) {
                         String last_name = query_response.getString("last_name");
                         String first_name = query_response.getString("first_name");
                         String email = query_response.getString("email");
-                        printQueueOrder order = new printQueueOrder(last_name, first_name, email);
+                        String print_one = query_response.getString("print_one");
+                        String print_two = query_response.getString("print_two");
+                        String print_three = query_response.getString("print_three");
+                        String print_four = query_response.getString("print_four");
 
+                        Boolean for_class = query_response.getBoolean("for_class");
+                        String class_name = query_response.getString("class_name");
+                        String class_proof = query_response.getString("class_proof");
+                        Boolean t_and_c = query_response.getBoolean("t_and_c");
+
+                        Timestamp timestamp = query_response.getTimestamp("submission_time");
+
+                        printQueueOrder order = new printQueueOrder(last_name,
+                                                                    first_name,
+                                                                    email,
+                                                                    print_one,
+                                                                    print_two,
+                                                                    print_three,
+                                                                    print_four,
+                                                                    for_class,
+                                                                    class_name,
+                                                                    class_proof,
+                                                                    t_and_c,
+                                                                    timestamp);
                         all_row_data.add(order);
                     }
                 }
