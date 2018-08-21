@@ -22,11 +22,16 @@ public class rental_queue_controller {
     @FXML
     TableView rental_queue_table;
     @FXML
-    TableColumn<rentalQueueOrder, String> last_name_col, first_name_col, email_col;
-    @FXML
-    TableColumn<rentalQueueOrder, String> tech_col, return_date_col, additional_components_col;
-    @FXML
-    TableColumn<rentalQueueOrder, String> comments_col, signature_col;
+    TableColumn<rentalQueueOrder, String>
+            last_name_col,
+            first_name_col,
+            email_col,
+            tech_col,
+            additional_components_col,
+            comments_col,
+            return_date_col,
+            signature_col,
+            timestamp_col;
 
     /**
      * Code to execute when scene is loaded.
@@ -89,53 +94,41 @@ public class rental_queue_controller {
         // Clear the table
         rental_queue_table.getItems().clear();
 
-        // Populate / set column sizes
-        last_name_col.setCellValueFactory(new PropertyValueFactory<>("LastName")); // Last name column
-        first_name_col.setCellValueFactory(new PropertyValueFactory<>("FirstName")); // First name column
-        email_col.setCellValueFactory(new PropertyValueFactory<>("email")); // Email column
-        tech_col.setCellValueFactory(new PropertyValueFactory<>("Technology")); // Technology column
-        return_date_col.setCellValueFactory(new PropertyValueFactory<>("ReturnDate"));
+        // Set columns to not be editable
+        last_name_col.setEditable(false);
+        first_name_col.setEditable(false);
+        email_col.setEditable(false);
+        tech_col.setEditable(false);
+        additional_components_col.setEditable(false);
+        comments_col.setEditable(false);
+        return_date_col.setEditable(false);
+        signature_col.setEditable(false);
+        timestamp_col.setEditable(false);
+
+        // Set width of columns
+        first_name_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(9));
+        last_name_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(9));
+        email_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(9));
+        tech_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(9));
+        additional_components_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(9));
+        comments_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(9));
+        return_date_col.prefWidthProperty().bind(rental_queue_table.maxWidthProperty().divide(9));
+        signature_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(9));
+        timestamp_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(9));
+
+        // Populate
+        first_name_col.setCellValueFactory(new PropertyValueFactory<>("FirstName"));
+        last_name_col.setCellValueFactory(new PropertyValueFactory<>("LastName"));
+        email_col.setCellValueFactory(new PropertyValueFactory<>("email"));
+        tech_col.setCellValueFactory(new PropertyValueFactory<>("Technology"));
         additional_components_col.setCellValueFactory(new PropertyValueFactory<>("AdditionalComponents"));
         comments_col.setCellValueFactory(new PropertyValueFactory<>("Comments"));
+        return_date_col.setCellValueFactory(new PropertyValueFactory<>("ReturnDate"));
+        signature_col.setCellValueFactory(new PropertyValueFactory<>("Signature"));
+        timestamp_col.setCellValueFactory(new PropertyValueFactory<>("SubmissionTime"));
 
-        last_name_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(6));
-        first_name_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(6));
-        email_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(6));
-        tech_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(6));
-        return_date_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(6));
-        additional_components_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(6));
-        comments_col.prefWidthProperty().bind(rental_queue_table.widthProperty().divide(6));
-
+        // Apply the resizing
         rental_queue_table.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
-
-        // Set columns to be non-sortable/non-editable/non-resizable
-        last_name_col.setSortable(false);
-        last_name_col.setEditable(false);
-        last_name_col.setResizable(false);
-
-        first_name_col.setSortable(false);
-        first_name_col.setEditable(false);
-        first_name_col.setResizable(false);
-
-        email_col.setSortable(false);
-        email_col.setEditable(false);
-        email_col.setResizable(false);
-
-        tech_col.setSortable(false);
-        tech_col.setEditable(false);
-        tech_col.setResizable(false);
-
-        return_date_col.setSortable(false);
-        return_date_col.setEditable(false);
-        return_date_col.setResizable(false);
-
-        additional_components_col.setSortable(false);
-        additional_components_col.setEditable(false);
-        additional_components_col.setResizable(false);
-
-        comments_col.setSortable(false);
-        comments_col.setEditable(false);
-        comments_col.setResizable(false);
 
         rental_queue_table.setItems(getRentalQueueOrder()); // Throws a SQLException
         rental_queue_table.refresh();

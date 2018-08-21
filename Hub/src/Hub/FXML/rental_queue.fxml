@@ -69,22 +69,15 @@
                    GridPane.hgrow="ALWAYS"
                    GridPane.rowIndex="0">
             <columns>
-                <TableColumn fx:id="last_name_col"
-                             text="Last Name" />
-                <TableColumn fx:id="first_name_col"
-                             text="First Name" />
-                <TableColumn fx:id="email_col"
-                             text="Email" />
-                <TableColumn fx:id="tech_col"
-                             text="Technology" />
-                <TableColumn fx:id="return_date_col"
-                             text="Return Date" />
-                <TableColumn fx:id="additional_components_col"
-                             text="Components" />
-                <TableColumn fx:id="comments_col"
-                             text="Comments" />
-                <TableColumn fx:id="signature_col"
-                             text="Signature" />
+                <TableColumn fx:id="first_name_col" text="First Name" />
+                <TableColumn fx:id="last_name_col" text="Last Name" />
+                <TableColumn fx:id="email_col" text="Email" />
+                <TableColumn fx:id="tech_col" text="Technology" />
+                <TableColumn fx:id="additional_components_col" text="Components" />
+                <TableColumn fx:id="comments_col" text="Comments" />
+                <TableColumn fx:id="return_date_col" text="Return Date" />
+                <TableColumn fx:id="signature_col" text="Signature" />
+                <TableColumn fx:id="timestamp_col" text="Time Submitted" />
             </columns>
         </TableView>
 

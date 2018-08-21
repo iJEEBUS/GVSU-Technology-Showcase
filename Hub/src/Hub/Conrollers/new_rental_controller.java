@@ -15,7 +15,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.Date;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -125,20 +127,13 @@ public class new_rental_controller {
         String technology = (String) tech_items.getValue();
         String components = additional_components.getText();
         String add_comments = comments.getText();
-        Boolean signature = signature_agree.isPressed();
-
-        LocalDate return_date = return_date_picker.getValue();
-        LocalDate checkout_date = LocalDate.now(); // the time of the submission
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("mm-dd-yyyy");
-        String formatted_return_date = return_date.format(formatter);
-        String formatted_checkout_date = checkout_date.format(formatter);
-
+        Date return_date = java.sql.Date.valueOf(return_date_picker.getValue());
+        Boolean signature = AGREED_TO_TERMS;
         Boolean success;
 
         Database db = new Database();
         db.connectToDatabase();
-        success = db.sendRentalQuery(fname, lname, email, technology, formatted_return_date, components, add_comments, signature);
-
+        success = db.sendRentalQuery(fname, lname, email, technology, components, add_comments, return_date, signature);
         if (success) {
             returnToHub();
         } else {

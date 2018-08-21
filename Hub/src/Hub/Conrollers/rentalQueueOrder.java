@@ -1,14 +1,19 @@
 package Hub.Conrollers;
 
+import java.sql.Time;
+import java.sql.Timestamp;
+
 public class rentalQueueOrder {
 
     private String LastName;
     private String FirstName;
     private String Email;
     private String Technology;
-    private String ReturnDate;
     private String AdditionalComponents;
     private String Comments;
+    private Timestamp ReturnDate;
+    private Boolean Signature;
+    private Timestamp SubmissionTime;
 
     // Constructors
     public rentalQueueOrder() {
@@ -20,31 +25,46 @@ public class rentalQueueOrder {
         this.AdditionalComponents = null;
         this.Comments = null;
     }
-    public rentalQueueOrder(String last, String first, String email, String tech, String return_date, String comps, String comments) {
-        this.LastName = last;
-        this.FirstName = first;
-        this.Email = email;
-        this.Technology = tech;
-        this.ReturnDate = return_date;
-        this.AdditionalComponents = comps;
-        this.Comments = comments;
+    public rentalQueueOrder(String last,
+                            String first,
+                            String email,
+                            String tech,
+                            String comps,
+                            String cmts,
+                            Timestamp return_date,
+                            Boolean sign,
+                            Timestamp ts) {
+        LastName = last;
+        FirstName = first;
+        Email = email;
+        Technology = tech;
+
+        AdditionalComponents = comps;
+        Comments = cmts;
+        ReturnDate = return_date;
+        Signature = sign;
+        SubmissionTime = ts;
     }
 
     // Setters
-    public void setLastName(String str) { this.LastName = str; }
-    public void setFirstName(String str) { this.FirstName = str; }
-    public void setEmail(String str) { this.Email = str; }
-    public void setTechnology(String technology) { this.Technology = technology; }
-    public void setReturnDate(String returnDate) { this.ReturnDate = returnDate; }
-    public void setAdditionalComponents(String comps) {this.AdditionalComponents = comps; }
-    public void setComments(String comments) { this.Comments = comments; }
+    public void setLastName(String str) { LastName = str; }
+    public void setFirstName(String str) { FirstName = str; }
+    public void setEmail(String str) { Email = str; }
+    public void setTechnology(String technology) { Technology = technology; }
+    public void setAdditionalComponents(String comps) { AdditionalComponents = comps; }
+    public void setComments(String comments) { Comments = comments; }
+    public void setReturnDate(Timestamp returnDate) { ReturnDate = returnDate; }
+    public void setSignature(Boolean signature) { Signature = signature; }
+    public void setSubmissionTime(Timestamp submissionTime) { SubmissionTime = submissionTime; }
 
     // Getters
-    public String getLastName() { return this.LastName; }
-    public String getFirstName() { return this.FirstName; }
-    public String getEmail() { return this.Email; }
-    public String getTechnology() { return this.Technology; }
-    public String getReturnDate() { return ReturnDate; }
-    public String getAdditionalComponents() { return this.AdditionalComponents; }
+    public String getLastName() { return LastName; }
+    public String getFirstName() { return FirstName; }
+    public String getEmail() { return Email; }
+    public String getTechnology() { return Technology; }
+    public String getAdditionalComponents() { return AdditionalComponents; }
     public String getComments() { return Comments; }
+    public Timestamp getReturnDate() { return ReturnDate; }
+    public Boolean getSignature() { return Signature; }
+    public Timestamp getSubmissionTime() { return SubmissionTime; }
 }

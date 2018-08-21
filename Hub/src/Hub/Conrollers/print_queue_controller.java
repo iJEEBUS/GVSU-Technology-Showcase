@@ -105,7 +105,6 @@ public class print_queue_controller {
 
         timestamp.setSortable(true); // can sort by submission times
 
-
         // Set width of columns
         first_name_col.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));
         last_name_col.prefWidthProperty().bind(print_queue_table.widthProperty().divide(12));

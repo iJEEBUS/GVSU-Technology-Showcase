@@ -50,8 +50,6 @@ public class Database {
             myConn.close();
     }
 
-
-
     /**
      * Creates and sends a query to the 3d printing database with all of the
      * needed user inputs.
@@ -70,7 +68,7 @@ public class Database {
 
         // make sure that the terms and conditions are signed
         // and that the needed info is inputted
-        if (
+        if (t_and_c == true &
                 fname != null &
                 lname != null &
                 email != null) {
@@ -123,31 +121,39 @@ public class Database {
      * Creates and sends a query to the tech rental database with all of the
      * needed user inputs.
      */
-    public Boolean sendRentalQuery(String fname, String lname, String email, String tech, String return_date, String comps, String comments, Boolean signature) {
+    public Boolean sendRentalQuery(String fname,
+                                   String lname,
+                                   String email,
+                                   String tech,
+                                   String comps,
+                                   String comments,
+                                   Date return_date,
+                                   Boolean signature) {
         System.out.println("Generating query to submit....");
 
-        // make sure that all of the text boxes are filled
-        if (fname != null & lname != null & email != null) {
+        // only execute of the user agreed to the terms and conditions
+        if (signature == true) {
 
-            String query = "INSERT INTO rentals (last_name, first_name, email, technology, return_date, comps, comments, signature)"
+            String query = "INSERT INTO rentals (first_name, last_name, email, technology, additional_components, comments, return_date, signature)"
                     + "VALUES (?,?,?,?,?,?,?,?)";
 
 
             // Connect to and send query to database
             try {
                 Connection myConn = connectToDatabase();
+                System.out.println("Connected to database");
 
                 // Check if connection exists.
                 // If no, try to reconnect 5 times before quitting.
                 if (myConn != null) {
                     PreparedStatement final_statement = myConn.prepareStatement(query);
-                    final_statement.setString(1,lname);
-                    final_statement.setString(2, fname);
+                    final_statement.setString(1,fname);
+                    final_statement.setString(2, lname);
                     final_statement.setString(3, email);
                     final_statement.setString(4, tech);
-                    final_statement.setString(5, return_date);
-                    final_statement.setString(6, comps);
-                    final_statement.setString(7, comments);
+                    final_statement.setString(5, comps);
+                    final_statement.setString(6, comments);
+                    final_statement.setDate(7, return_date);
                     final_statement.setBoolean(8, signature);
                     final_statement.execute();
                     return true;
@@ -198,23 +204,27 @@ public class Database {
                     myConn.close();
                 } else {
 
-                    ResultSetMetaData meta_data = query_response.getMetaData();
-                    int colCount = meta_data.getColumnCount();
-
-                    for (int i = 1; i < colCount; i++) {
-                        String col_name = meta_data.getColumnName(i);
-                    }
-
                     while (query_response.next()) {
-                        String last_name = query_response.getString("last_name");
                         String first_name = query_response.getString("first_name");
+                        String last_name = query_response.getString("last_name");
                         String email = query_response.getString("email");
-                        String tech = query_response.getString("tech_col");
-                        String return_date = query_response.getString("return_date_col");
-                        String additional_comps = query_response.getString("additional_components_col");
-                        String comments = query_response.getString("comments_col");
-//                        String signature = query_response.getString("signature_col");
-                        rentalQueueOrder order = new rentalQueueOrder(last_name, first_name, email, tech, return_date, additional_comps, comments);
+                        String tech = query_response.getString("technology");
+                        String additional_comps = query_response.getString("additional_components");
+                        String comments = query_response.getString("comments");
+                        Timestamp return_date = query_response.getTimestamp("return_date");
+                        Boolean signature = query_response.getBoolean("signature");
+                        Timestamp submission_time = query_response.getTimestamp("submission_time");
+
+                        rentalQueueOrder order = new rentalQueueOrder(
+                                last_name,
+                                first_name,
+                                email,
+                                tech,
+                                additional_comps,
+                                comments,
+                                return_date,
+                                signature,
+                                submission_time);
 
                         all_row_data.add(order);
                     }
